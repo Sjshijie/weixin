@@ -1,0 +1,18 @@
+/*主体样式*/
+.all{height:100%; margin:0 auto;}
+@media screen and (min-width: 1000px) {
+	.all{width:500px;}
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+	.all{width:100%;}
+
+}
+*{
+	
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	
+	height: 100%;
+}

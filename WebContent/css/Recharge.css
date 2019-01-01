@@ -1,0 +1,22 @@
+/* CSS Document */
+
+.wapstyle{position:relative; height:100%;}
+
+.main{position:absolute; z-index:10;}
+
+.supernatant{position:absolute; z-index:30; background:rgba(0,0,0,0.45); width:100%; height:100%; float:left;}
+.supernatant .rechargeInfo{width:86%; height:90%; position:absolute; z-index:50; left:0; right:0; top:0; bottom:0; margin:auto; background: -webkit-linear-gradient(top,#eb6b91,#f4c525,#1bb1b2,#3b63ae); float:left;}
+.supernatant .rechargeInfo .icon01{position:absolute; left:4%; top:3%; background:url(../images/recharge_icon02.png) no-repeat 50%; width:30px; height:30px; background-size:auto 100%; float:left;}
+.supernatant .rechargeInfo .rechargeContent{width:90%; height:86%; margin:15% 5% 0 5%; float:left; color:#ffffff;}
+.supernatant .rechargeInfo .rechargeContent .module1{width:100%; text-align:center; font-size:1.375em; margin-bottom:3%;}
+.supernatant .rechargeInfo .rechargeContent .module2{width:100%; height:13%; background:url(../images/recharge_logo.png) no-repeat 50%; background-size:auto 100%; float:left; margin-bottom:1%;}
+.supernatant .rechargeInfo .rechargeContent .module3{width:100%; height:25px; line-height:27px; float:left;}
+.supernatant .rechargeInfo .rechargeContent .module3 .icon02{background:url(../images/recharge_icon01.png) no-repeat 50%; background-size:auto 100%; width:10%; height:25px; float:left; margin-right:1%;}
+.supernatant .rechargeInfo .rechargeContent .module4{width:100%; float:left; margin:4% 0;}
+.supernatant .rechargeInfo .rechargeContent .module4 li{width:35%; margin:2%; border:1px solid #ffffff; float:left; padding:2% 5%; text-align:center; color:#ffffff; border-radius:8px;}
+.supernatant .rechargeInfo .rechargeContent .module4 li p{margin-bottom:3%;}
+.supernatant .rechargeInfo .rechargeContent .module4 li p b{font-size:1.5em; margin-right:3%;}
+.supernatant .rechargeInfo .rechargeContent .module5{width:100%; text-align:right; border-top:1px solid #ffffff; float:left; padding-top:3%; margin-bottom:5%;}
+.supernatant .rechargeInfo .rechargeContent .module6{width:100%; float:left; background-color:#ffffff;}
+.supernatant .rechargeInfo .rechargeContent .module6 em{font-style:normal; text-align:center; padding:3% 5%; margin:1%; width:88%; background: -webkit-linear-gradient(left,#eb6b91,#f4c525,#1bb1b2,#3b63ae); float:left;}
+.supernatant .rechargeInfo .rechargeContent .module7{width:100%; text-align:center; font-size:0.875em; float:left; margin-top:2%;}

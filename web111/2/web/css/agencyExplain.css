@@ -1,0 +1,80 @@
+.all{
+		background: url("../images/explainBackground.png");
+		background-size:100% 100%;
+	}
+	.all1{
+		background: url("../images/explainBackground1.png");
+		background-size:100% 100%;
+	}
+	.all ul{
+		list-style: none;
+		float: left;
+		width: 100%;
+		text-align:center;
+	}
+	.all ul li{
+		margin-top: 5px;
+		color:#333333;
+	}
+	.all .title span{
+		display: inline-block;
+		line-height: 35px;
+		height: 35px;
+		width: auto;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.all .title div{
+		height:25px;
+		line-height:25px;
+		display: inline-block;
+		color:#ffffff;
+		letter-spacing: 2px;
+	}
+	.one_ul{
+		margin-top: 65%;
+	}
+	.one_ul .title span{
+		color:#eb718f;
+	}
+	.one_ul div{
+		background: url("../images/explain_1.png") no-repeat;
+		background-size:100% 100%;
+		width: 30%;
+	}
+	
+	.two_ul{
+		margin-top: 6%;
+	}
+	.two_ul .title span{
+		color:#efb033;
+	}
+	.two_ul div{
+		background: url("../images/explain_2.png") no-repeat;
+		background-size:100% 100%;
+		width: 25%;
+	}
+	
+	.three_ul{
+		margin-top: 6%;
+	}
+	.three_ul .title span{
+		color:#1cb1b1;
+	}
+	.three_ul div{
+		background: url("../images/explain_3.png") no-repeat;
+		background-size:100% 100%;
+		width: 25%;
+	}
+	
+	.four_ul{
+		margin-top: 6%;
+	}
+	.four_ul .title span{
+		color:#3a64ae;
+	}
+	.four_ul div{
+		background: url("../images/explain_4.png") no-repeat;
+		background-size:100% 100%;
+		width: 25%;
+	}

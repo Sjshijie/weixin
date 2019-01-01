@@ -1,0 +1,28 @@
+/* CSS Document */
+@charset "utf-8";
+
+.waptable .module1{width:92%; margin:4%; float:left;}
+.waptable .module1 .M1left{width:32%; max-height:152px; overflow:hidden; text-align:center; float:left; margin:3% 1% 3% 0;}
+.waptable .module1 .M1left img{width:100%; height:auto; border-radius:8px;}
+.waptable .module1 .M1mid{width:40%; float:left; margin:3% 0;}
+.waptable .module1 .M1mid h3{margin-top:-4%;}
+.waptable .module1 .M1right{width:27%; float:left; background:url(../images/Tenement_icon01.png) no-repeat 50%; padding:7% 0; background-size:100% auto; text-align:center;}
+.waptable .module1 .M1right p{font-size:0.875em;}
+.waptable .module1 .M1right b{font-size:1.5em; color:#515151;}
+
+.waptable .module2{width:92%; margin:0 4%; float:left; border-bottom:1px solid #d3d1d1; padding-bottom:4%;}
+.waptable .module2 b{width:32%; float:left; font-size:1.5em; color:#eb718f;}
+.waptable .module2 span{width:63%; margin-left:5%; float:left;}
+.waptable .module2 span p{margin-bottom:2.5%; height:20px;}
+.waptable .module2 span p i{background:url(../images/commission_icon01.png) no-repeat 0 50%; width:20px; height:20px; background-size:auto 97%; float:left; margin-right:1.5%;}
+.waptable .module2 span p em{font-style:normal; float:left; line-height:20px; margin:0 5% 0 2%; font-weight:bold;}
+
+.waptable .module3{width:90%; margin:4% 5%; float:left;}
+.waptable .module3 i{width:24%; max-height:146px; overflow:hidden; text-align:center; float:left; margin-right:4%;}
+.waptable .module3 i img{width:100%; height:auto; border-radius:50%;}
+.waptable .module3 h3{font-size:1.5em; margin-bottom:1%; font-weight:bold; float:left; width:72%;}
+.waptable .module3 p{font-size:1.25em; color:#777777; margin-bottom:1%; float:left; width:72%;}
+
+.waptable .module4{width:90%; margin:2% 5%; float:left; border-top:1px solid #d3d1d1; border-bottom:1px solid #d3d1d1; padding:2% 0; position:relative;}
+.waptable .module4 i{background:url(../images/Tenement_icon02.jpg) no-repeat 50%; height:10px; padding:0 5%; background-size:auto 100%; position:absolute; left:7%;  top:0; margin-top:-10px; z-index:50;}
+.waptable .module4 p{ float:left; width:100%; margin:2% 0; color:#777777; font-size:1.25em;}

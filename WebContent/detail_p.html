@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no" >  
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>房源详情-拍价</title>
+<link  type="text/css" rel="stylesheet" href="css/all.css"/>
+<link rel="stylesheet" href="css/swiper.min.css">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script src="js/echarts.js"></script>
+<link  type="text/css" rel="stylesheet" href="css/detail_p.css"/>
+
+
+
+
+</head>
+<body>
+	<div class="all">
+		<!-- 头部 start -->
+		
+		<!-- 内容 end -->
+	</div>
+	<script id="detail" type="text/html">
+		
+
+<div class="top">
+			<div class="pageNumber">
+				<span class="index">1</span>/<span class="sumIndex">2</span>
+			</div>
+			 <div class="swiper-container">
+		        <div class="swiper-wrapper">
+
+		            <!-- <div class="swiper-slide"><img class="big_room" alt="" src="upload/room.jpg"></div>
+		            <div class="swiper-slide"><img class="big_room" alt="" src="upload/room.jpg"></div>
+		            <div class="swiper-slide"><img class="big_room" alt="" src="upload/room.jpg"></div> -->
+
+		            <%for (var i=0;i<data.houseImg.length;i++){%>
+		            	<div class="swiper-slide"><img class="big_room" alt="" src=<%=data.houseImg[i].photoUrl%>></div>
+		            <%}%>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination" style="display: none;"></div>
+		        <!-- Add Navigation -->
+		         <!-- <div class="swiper-button-prev"></div>
+		        <div class="swiper-button-next"></div> -->
+		    </div>
+		</div>
+		<!-- 头部 end -->
+		<div class="schedule_all">
+			<div  class="schedule_all_top">
+				<span class="schedule_all_top_span_top">正在进行</span>
+				<span class="schedule_all_top_span_bottom"><%=data.sellHouseInfo.endDate%> <%=data.sellHouseInfo.endTime%>结束</span>
+			</div>
+			<div  class="schedule_all_bottom">
+				<div  class="schedule_all_bottom_div"></div>
+			</div>
+		</div>
+		<!-- 内容 start -->
+		<div class="content">
+			<div class="content_content">
+				<p class="title"><%=data.sellHouseInfo.villageName%></p>
+				<div class="comment">
+					<ul>
+							<li class="left_li">
+								专家点评
+							</li>
+							<!-- <li class="right_li">
+								<div class="text">
+									<span>天下第一好房</span>
+								</div>
+								<div class="img">
+									<div class="img_img"></div>
+								</div>
+								<div class="name">王丹初级</div>
+							</li> -->
+						</ul>
+				</div>
+				<ul class="ul_1">
+					<li>
+						<span class="ul_1_span_top"><%=data.sellHouseInfo.listingPrice/10000%>万</span>
+						<span class="ul_1_span_bottom">当前价</span>
+					</li>
+					<li>
+						<span class="ul_1_span_top"><%=data.sellHouseInfo.listingPrice/10000%>万</span>
+						<span class="ul_1_span_bottom">总价</span>
+					</li>
+					<li class="last_li">
+						<span class="ul_1_span_top"><%=data.sellHouseInfo.remindNum/10000%>万</span>
+						<span class="ul_1_span_bottom">单价/万</span>
+					</li>
+				</ul>
+				<ul class="ul_1 ul_2">
+					<li>
+						<span class="ul_1_span_top">
+							<img alt="" src="img/detail_1.png">
+						</span>
+						<span class="ul_1_span_bottom">报名人数</span>
+						<span class="ul_1_span_bottom"><%=data.sellHouseInfo.enrollNum%></span>
+					</li>
+					<li>
+						<span class="ul_1_span_top">
+							<img alt="" src="img/detail_2.png">
+						</span>
+						<span class="ul_1_span_bottom">设置提醒人数</span>
+						<span class="ul_1_span_bottom"><%=data.sellHouseInfo.remindNum%></span>
+					</li>
+					<li class="last_li">
+						<span class="ul_1_span_top">
+							<img alt="" src="img/detail_3.png">
+						</span>
+						<span class="ul_1_span_bottom">围观人数</span>
+						<span class="ul_1_span_bottom"><%=data.sellHouseInfo.lookerNum%></span>
+					</li>
+				</ul>
+				<ul class="ul_1 ul_newadd">
+					<li>
+						<span class="ul_1_span_top">￥1.0万</span>
+						<span class="ul_1_span_bottom">保证金</span>
+					</li>
+					<li>
+						<span class="ul_1_span_top">￥<%=data.sellHouseInfo.increasePrice/1000%>万</span>
+						<span class="ul_1_span_bottom">减价幅度</span>
+					</li>
+					<li class="last_li">
+						<span class="ul_1_span_top">￥700万</span>
+						<span class="ul_1_span_bottom">保留价</span>
+					</li>
+				</ul>
+				
+				<ul class="ul_1 ul_newadd1">
+					<li class="ul_newadd1_start_li">
+						<span class="ul_newadd1_one start_span">零佣金</span>
+						<span class="ul_newadd1_two">满五</span>
+						<span class="ul_newadd1_three"> 满五 </span>
+						<span class="ul_newadd1_four"> 首付比例45%以上</span>
+						<span class="ul_newadd1_five">过户受理当天结清首付</span>
+						<img alt="" src="img/ques.png">
+					 </li>
+					<li class="li_time">
+						<img alt="" src="img/detail_4.png">
+						房源开放时间:<%=data.sellHouseInfo.openDay%>
+					</li>
+					<li class="li_adress last_li">
+						房源地址:<%=data.sellHouseInfo.place%>
+						<a>预约看房</a>
+					</li>
+				</ul>
+				
+				<div class="info">
+					房源信息
+				</div>
+				<ul class="ul_3">
+					<li>小区名：<%=data.sellHouseInfo.villageName%></li>
+					<li>户型：<%=data.sellHouseInfo.houseModel%></li>
+					<li>类型：<%=data.sellHouseInfo.houseType%></li>
+					<li>面积：<%=data.sellHouseInfo.houseArea%>㎡</li>
+					<li>装修：<%=data.sellHouseInfo.houseDec%></li>
+					<li>朝向：<%=data.sellHouseInfo.orientation%></li>
+					
+					<%if(data.sellHouseInfo.isElevator==0){%>
+					<li>地铁：无</li>
+					<%}%>
+					<%if(data.sellHouseInfo.isElevator==1){%>
+					<li>地铁：有</li>
+					<%}%>
+					<li>楼层：<%=data.sellHouseInfo.houseFloor%></li>
+				</ul>
+				<div class="info">
+					小区基本信息
+				</div>
+				<ul class="ul_3">
+					<li>区域：<%=data.sellHouseInfo.communityArea%></li>
+					<li>总户：<%=data.sellHouseInfo.totalfamily%></li>
+					<li>装修：<%=data.sellHouseInfo.houseDec%></li>
+					<li>绿化率：<%=data.sellHouseInfo.greeningRate%></li>
+					<li>环线：<%=data.sellHouseInfo.loopLine%></li>
+					<li>建立年代：<%=data.sellHouseInfo.builtYears%></li>
+					<li>物业费：<%=data.sellHouseInfo.propertyCosts%>元/m²/月</li>
+					<li>停车位：<%=data.sellHouseInfo.parkingSpace%></li>
+					<li>物业公司：<%=data.sellHouseInfo.propertyCompany%></li>
+					
+					<li class="more_long">
+						<img alt="" src="img/icon14.png">
+						点击展开
+					</li>
+					<li class="long long_long"><span class="span_1">交通/地铁：</span><span><%=data.houseMating.metro%> </span></li>
+					<li class="long long_long"><span class="span_1">公交车：</span><span><%=data.houseMating.bus%></span> </li>
+					<li class="long long_long"><span class="span_1">教育/幼儿园：</span><span><%=data.houseMating.kindergarten%> </span></li>
+					<li class="long long_long"><span class="span_1">中小学：</span><span><%=data.houseMating.priMiSchools%></span></li>
+					<li class="long long_long"><span class="span_1">医院：</span><span><%=data.houseMating.hospital%></span></li>
+					<li class="long long_long"><span class="span_1">购物/商场：</span><span><%=data.houseMating.market%></span></li>
+					<li class="long long_long"><span class="span_1">超市：</span><span><%=data.houseMating.supermarket%></span></li>
+					<li class="long long_long"><span class="span_1">菜场：</span><span><%=data.houseMating.theMarket%></span></li>
+					<li class="long long_long"><span class="span_1">生活/银行：</span><span><%=data.houseMating.bank%></span></li>
+					<li class="long long_long"><span class="span_1">餐厅：</span><span><%=data.houseMating.restaurant%></span></li>
+					<li class="long long_long"><span class="span_1">咖啡厅：</span><span><%=data.houseMating.cafe%></span></li>
+					<li class="long long_long"><span class="span_1">娱乐/公园：</span><span><%=data.houseMating.park%></span></li>
+					<li class="long long_long"><span class="span_1">KTV：</span><span><%=data.houseMating.ktv%></span></li>
+					<li class="long long_long"><span class="span_1">健身房：</span><span><%=data.houseMating.gym%></span></li>
+					<li class="long long_long"><span class="span_1">体育馆：</span><span><%=data.houseMating.stadium%></span></li>
+					<li class="long long_long"><span class="span_1">电影院：</span><span><%=data.houseMating.cinema%></span></li>
+				</ul>
+				<div class="info">
+					交易服务
+				</div>
+				<div class="service">
+					<ul>
+						<li>
+							<img alt="" src="img/detail_5.png">
+							<a>咨询业主</a>
+						</li>
+						<li>
+							<img alt="" src="img/detail_6.png">
+							<a>咨询专家</a>
+						</li>
+						<li>
+							<img alt="" src="img/detail_7.png">
+							<a>我要代办</a>
+						</li>
+						<li>
+							<img alt="" src="img/detail_8.png">
+							<a>贷款计算</a>
+						</li>
+						<li>
+							<img alt="" src="img/detail_9.png">
+							<a>购房资质</a>
+						</li>
+					</ul>
+				</div> 
+				<div class="info cai">
+					价格竞猜
+				</div>
+				<div class="all_main">
+				
+					<div id="main">
+									
+					</div>
+				</div>
+				<div class="btn">
+					我要猜价
+				</div>
+				<div class="info">
+					留言
+				</div>
+				<div class="remark_div">
+					<ul>
+						<!-- <li>
+							<img alt="" src="upload/remark.jpg">
+							<a>多嘴的猫</a>
+							<span>房源不错，采光很好很好很好。</span>
+						</li>
+						<li class="remarkLast_li">
+							<img alt="" src="upload/remark.jpg">
+							<a>多嘴的猫</a>
+							<span>房源不错，采光很好很好很好。</span>
+						</li> -->
+					</ul>
+				</div>
+				<div class="info info_top0">
+					拍你喜欢
+				</div>
+				<!-- one -->
+				<%for(var i=0;i<data.pushLike.length;i++){%>
+				<div class="content_content_bottom" data-houseId=<%=data.pushLike[i].houseId%>>
+					<div class="div_one">
+						<ul>
+							<li class="li_left"><img alt="" src=<%=data.pushLike[i].photoUrl%></li>
+							<li class="li_center">
+								<p class="title_p"><%=data.pushLike[i].villageName%></p>
+								<p class="content_p"><span class="content_p_left"><%=data.pushLike[i].houseModel%>% <%=data.pushLike[i].houseArea%>m² <%=data.pushLike[i].orientation%></span><span class="content_p_right m_span"><%=data.pushLike[i].listingPrice/10000%>万</span></p>
+								<p class="content_p"><span class="content_p_left"><%=data.pushLike[i].villageName%></span><span class="content_p_right">76809万/平</span></p>
+							</li>
+						</ul>
+					</div>
+					<div class="div_two">
+						<ul>
+							<li class="left_li">
+								<p class="p_top">报名人数 <span><%=data.pushLike[i].isOut%></span></p>
+								<p class="p_bottom"><%=data.pushLike[i].openDay%></p>
+							</li>
+							<li class="right_li">
+								<ul>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span><%=data.pushLike[i].houseDec%><a>家具齐全</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span><%=data.pushLike[i].subWay%><a>近地铁</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span><%=data.pushLike[i].traName%><a>近商圈</a></span>
+									</li>
+								</ul>
+							</li>
+							<li class="center_li">
+								<img alt="" src="img/pj.png">
+							<li>
+						</ul>
+					</div>
+					<div class="div_three">
+						<ul>
+							<li class="left_li">
+								专家点评
+							</li>
+							<li class="right_li">
+								<div class="text">
+									<span>天下第一好房</span>
+								</div>
+								<div class="img">
+									<div class="img_img"></div>
+								</div>
+								<div class="name">王丹初级</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<%}%>
+				<!-- one end -->
+				<!-- 底部 start -->
+				<div class="bottom">
+					<ul>
+						<li class="show">
+							<span><img alt="" src="img/icon7.png"></span>
+							<span>在线咨询</span>
+						</li>
+						<li>
+							<span><img alt="" src="img/detail_2.png"></span>
+							<span>分享好友</span>
+						</li>
+						<li class="after to_call">
+							<span class="isDeposit">我要拍价</span>
+						</li>
+					</ul>
+				</div>
+				<!-- 底部 end -->
+			</div>
+		</div>
+
+	</script>
+</body>
+<script type="text/javascript">
+//banner加载
+
+
+//百度地图API功能
+/* var map = new BMap.Map("map"); // 创建Map实例
+var mPoint = new BMap.Point(121.448879, 31.302459);
+map.centerAndZoom(mPoint, 18);
+var marker = new BMap.Marker(mPoint);  // 创建标注
+map.addOverlay(marker);   
+ */
+
+</script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/detail_p.js"></script>
+
+<script src="js/template.js"></script>
+</html>

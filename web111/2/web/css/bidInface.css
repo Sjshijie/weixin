@@ -1,0 +1,178 @@
+/* CSS Document */
+@charset "utf-8";
+
+.module1{width:90%; padding:5% 5% 3% 5%; background-color:#ffffff; float:left;}
+.module1 h3{font-size:1.375em; width:100%; float:left; margin-bottom:1%; font-weight:bold;}
+.module1 p{float:left; width:100%; margin-bottom:3%; font-size:1.25em;}
+.module1 ul{float:left; width:100%;}
+.module1 ul li{float:left; padding:2% 3%; margin:0 3% 3% 0; border-radius:5px;}
+.module1 ul li.M1li1{background-color:#ffd4df; color:#eb719f;}
+.module1 ul li.M1li2{background-color:#c4d9ff; color:#3a64ae;}
+.module1 ul li.M1li3{background-color:#c5fcfc; color:#1bc1c1;}
+.module1 ul li.M1li4{background-color:#ffe8bb; color:#efb033;}
+.module1 ul i{background:url(../images/BidInterface_icon02.png) no-repeat 50% 0; width:35px; height:35px; background-size:auto 80%; float:left;}
+
+.module2{background-color:#f5f5f5; padding:4% 0; float:left;}
+.module2 ul{width:100%; float:left; background-color:#ffffff; padding-top:8%;}
+.module2 ul li{float:left; width:33.1%; border-right:1px solid #c1c1c1; text-align:center; margin-bottom:8%;}
+.module2 ul li.listyle{border-right:none;}
+.module2 ul li b{color:#eb718d; font-size:1.75em; width:100%; float:left;}
+.module2 ul li span{font-size:1.25em; width:100%; float:left; margin-top:1%;}
+
+.module3{background-color:#d6d6d6; width:100%; float:left;}
+.module3 .M3Top{width:100%; float:left; height:40px; background-color:#ffffff;}
+.module3 .M3Top em{background-color:#f1b847; width:40%; line-height:42px; text-align:center; font-size:1.25em; color:#ffffff; font-style:normal; float:left; border-top-right-radius:50px; border-bottom-right-radius:50px;}
+.module3 .M3Top span{line-height:42px; text-align:center; width:60%; float:left; font-size:1.25em;}
+.module3 i{background: -webkit-linear-gradient(left,#eb6b91,#f4c525,#1bb1b2,#3b63ae); background:linear-gradient(to right,#eb6b91,#f4c525,#1bb1b2,#3b63ae); height:3px; width:80%; float:left;}
+
+.module4{width:90%; margin:0 5%; float:left;}
+.module4 p{text-align:right; height:50px; line-height:50px; width:100%; float:left;}
+.module4 b{border:2px solid #efb033; width:100%; height:70px; font-size:2em; color:#efb033; text-align:center; line-height:70px; float:left;  border-radius:35px;}
+
+.module5{width:90%; margin:5%; float:left; border:1px solid #d3d1d1;}
+.module5 ul{width:92%; margin:3% 4%;}
+.module5 ul li{width:50%; float:left; height:40px; line-height:40px; font-size:1em;}
+.module5 ul li em{font-style:normal; color:#b7b7b7; margin-left:5%;}
+.module5 ul li .em{color:#eb718f;}
+.module5 ul li input{width: 44%;border:0;border-bottom:1px #eb718f solid;}
+.module5 ul li select{width:44.3%; border:1px solid #eb718f; border-radius:5px; background-color:#ffffff; height:30px;}
+.module5 ul span{width:100%; height:1px; border-top:1px solid #d3d1d1; float:left; margin-top:3%;}
+.module5 .module5_li{text-align: right;}
+.module5 .module5_li .module5_li_div{position:relative;width: 90%;height: 70%;border-radius:50px;display: inline-block;vertical-align: middle;border:1px #eb718f solid;margin-right: 11%;text-align: center;}
+.module5 .module5_li .module5_li_div div{position:absolute;margin:auto;width: 52%;height: 100%;border-radius:50px;line-height: 30px;font-size: 0.8em;background-color: #ffffff;color:#333333;z-index: 99;}
+.module5 .module5_li .module5_li_div .left_div{left:0;top:0;bottom:0;}
+.module5 .module5_li .module5_li_div .right_div{right:0;top:0;bottom:0;}
+.module5 .module5_li .module5_li_div .cho_div{background-color:#eb718f;color:#ffffff;z-index: 999;}
+
+.module6{width:90%; margin:0 5%; float:left;}
+.module6 .module6_a{float: left;width:18px;height: 18px;background: url(../images/chosed.png) no-repeat;background-size:100% 100%;}
+.module6 .module6_a1{background: url(../images/chose.png) no-repeat;background-size:100% 100%;}
+.module6 input{float:left; width:5%;}
+.module6 span{float:right; width:91%; margin-left:1%;}
+.module6 span a{color:#3a64ae;}
+
+.module7{width:90%; float:left; margin:0 5%; border-bottom:1px solid #d3d1d1;}
+.module7 a{background:url(../images/BidInterface_icon05.png) no-repeat 50%; background-size:100% auto; width:30%; padding:13% 0; color:#FFFFFF; text-align:center; float:left; margin:4% 35%; font-size:1.375em;}
+.module7 .a{background:url(../images/BidInterface_icon06.png) no-repeat 50%; background-size:100% auto; width:30%; padding:13% 0; color:#FFFFFF; text-align:center; float:left; margin:4% 35%; font-size:1.375em;}
+.module7 .a1{background:url(../images/BidInterface_icon07.png) no-repeat 50%; background-size:100% auto; width:30%; padding:13% 0; color:#FFFFFF; text-align:center; float:left; margin:4% 35%; font-size:1.375em;}
+
+
+.module8{width:100%; float:left;}
+.module8 ul{width:100%; float:left; background-color:#ffffff;  margin:7% 0;}
+.module8 ul li{float:left; width:49%; border-right:1px solid #c1c1c1; text-align:center;}
+.module8 ul li.listyle{border-right:none;}
+.module8 ul li .icon01{ background:url(../images/BidInterface_icon04.png) no-repeat 50%; background-size:auto 100%; width:100%; height:40px; float:left;}
+.module8 ul li .icon02{ background:url(../images/BidInterface_icon03.png) no-repeat 50%; background-size:auto 100%; width:100%; height:40px; float:left;}
+.module8 ul li .icon03{ background:url(../images/BidInterface_icon10.png) no-repeat 50%; background-size:auto 100%; width:100%; height:40px; float:left;}
+.module8 ul li span{font-size:1.25em; width:100%; float:left; margin-top:2%;}
+@media screen and (min-width: 1000px) {
+		.call{width: 300px;}
+	}
+	@media (min-width: 300px) and (max-width: 1000px) {
+		.call{width: 85%;}
+	}
+	/*付款 start*/
+	.call{
+		height:70%;
+		position: fixed;
+		z-index: 999999;
+		margin:auto;
+		top:10%;
+		right:0;
+		left:0;
+		background: -webkit-linear-gradient(top, #ef6a8f,#f17d8a,#f1c728,#cfc36b,#1cb1b3,#3e64ae);
+		display: none;
+	}
+
+	/*付款 end*/
+/*未认证 start*/
+	.gotoapp{
+		margin:auto;
+		height: 150px;
+		top:0;
+		bottom:0;
+		border-radius:10px;
+		background:transparent;
+		background-color: #ffffff;
+		text-align: center;
+		color:#333333;
+	}
+	.gotoapp_center{
+		width: 90%;
+		display: inline-block;
+		margin-top: 15px;
+		line-height: 25px;
+		height:65px;
+		border-bottom:1px #d3d1d1 solid;
+	}
+	.gotoapp_btn{
+		width: 90%;
+		height:50px;
+		display: inline-block;
+		margin-top: 12px;
+	}
+	.gotoapp_btn div{
+		width: 49%;
+		height: 100%;
+		float: left;
+		line-height: 50px;
+	}
+	.gotoapp_btn .gotoapp-right{
+		border-left:1px #d3d1d1 solid;
+	}
+	/*未认证 end*/
+	/*付款提醒 start*/
+	.call_pay{
+		background: transparent;
+		background: url("../images/icon12.png") no-repeat;
+		background-size:99% 99%;
+	}
+	.call_pay .center{
+		width: 40%;
+		position: absolute;
+		margin: auto;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+	.call_pay .center_title{
+		width: 80%;
+		position: absolute;
+		margin: auto;
+		bottom:23%;
+		left:0;
+		right:0;
+	}
+	.call_pay .center_btn{
+		width: 40%;
+		height: 40px;
+		line-height: 40px;
+		position: absolute;
+		margin: auto;
+		bottom:5%;
+		left:0;
+		right:0;
+		background: -webkit-linear-gradient(left, #ef6a8f,#cfc36b,#1cb1b3,#3e64ae);
+		text-align: center;
+		color:#ffffff;
+		border-radius:5px;
+	}
+	.call_pay .call_pay-no{
+		position: absolute;
+		margin: auto;
+		width: 50px;
+		height:50px;
+		right:0;
+	}
+	/*付款提醒 end*/
+	/*遮罩层 start*/
+	.shile{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background-color: rgba(0,0,0,.7);
+		display: none;
+	}
+	/*遮罩层 end*/

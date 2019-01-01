@@ -1,0 +1,19 @@
+/* CSS Document */
+@charset "utf-8";
+
+.wapstyle{height:100%;}
+
+.download{width:100%; height:100%; float:left; background: linear-gradient(to bottom,#eb6b91,#f4c525,#1bb1b2,#3b63ae); background:-webkit-linear-gradient(top,#eb6b91,#f4c525,#1bb1b2,#3b63ae); position:relative;}
+.download .module1{position:absolute; z-index:10; bottom:0; left:0; right:0; margin:auto; background:url(../images/download_img01.png) no-repeat 50% 100%; width:70%; background-size:100% auto; float:left; padding:35% 0;}
+.download .downloadInfo{position:absolute; z-index:30; width:100%; height:100%; float:left; color:#ffffff;}
+.download .downloadInfo .module2{width:100%; text-align:center; font-size:1.25em; margin:6% 0 4% 0;}
+.download .downloadInfo .module3{width:100%; height:13%; background:url(../images/download_logo.png) no-repeat 50%; background-size:auto 100%; float:left; margin-bottom:2%;}
+.download .downloadInfo .module4{width:100%; font-size:1.375em; float:left; text-align:center;}
+.download .downloadInfo .module5{width:100%; height:4.5%; background:url(../images/download_title.png) no-repeat 50%; background-size:auto 100%; float:left; margin:6% 0;}
+.download .downloadInfo .module6{width:100%; float:left;}
+.download .downloadInfo .module6 a{width:39%; margin:0 5%; float:left; border:1px solid #3a64ae; color:#3a64ae; border-radius:20px;}
+.download .downloadInfo .module6 a.astyle{color:#ffffff; background-color:#3a64ae;}
+.download .downloadInfo .module6 a .M6a{float:left; width:38%; text-align:center; border-right:1px solid #3a64ae; padding:4% 0 4% 2%;}
+.download .downloadInfo .module6 a.astyle .M6a{border-right:1px solid #c9ddff;}
+.download .downloadInfo .module6 a .M6a em{font-style:normal; font-size:0.75em;}
+.download .downloadInfo .module6 a .M6b{float:left; width:59%; text-align:center; padding:8% 0;}

@@ -1,0 +1,321 @@
+.all{
+		text-align: center;
+	}
+	.all_ul{
+		width: 90%;
+		display: inline-block;
+		list-style: none;
+		border-bottom:1px #d3d1d1 solid;
+	}
+	.all_ul>li{
+		height: 130px;
+		position: relative;
+	}
+	.all_ul>li ul{
+		width: 100%;height: 80px;
+		position: absolute;
+		margin: auto;
+		top:0;
+		bottom:0;
+		text-align: center;
+	}
+	.all_ul>li>ul>li{
+		display: inline-block;
+		height:100%;
+	}
+	.all_ul>li ul .left{
+		width: 18%;
+		float: left;
+		position: relative;
+	}
+	.all_ul>li ul .center{
+		width: 56%;
+		position: relative;
+	}
+	.all_ul>li ul .right{
+		width: 24%;
+		float: right;
+		position: relative;
+	}
+	.all_ul>li ul .left img{
+		width: 100%;
+		position: absolute;
+		margin:auto;
+		top:0;
+		bottom:0;
+		left:0;
+		border-radius:50%;
+	}
+	.center ul{
+		width: 100%;
+		height: 100%;
+		list-style: none;
+		position: absolute;
+	}
+	.center ul .top{
+		width: 100%;
+		height: 60%;
+		border-bottom:1px #d3d1d1 solid;
+	}
+	.center ul .top .top_left{
+		width: 50%;
+		height:100%;
+		text-align: left;
+		vertical-align: middle;
+		float: left;
+	}
+	.center ul .top .top_left .title{
+		display: inline-block;
+		width: 100%;
+		font-size: 1em;
+	}
+	.center ul .top .top_left .subtitle{
+		display: inline-block;
+		width: 100%;
+		font-size: 0.6em;
+	}
+	.center ul .top .top_right{
+		float:right;
+		width: 46%;
+		height: 100%;
+		text-align: left;
+		vertical-align: middle;
+		position: relative;
+	}
+	.center ul .top .top_right .btn{
+		width: 100%;
+		height: 30px;
+		background: url("../img/color_btn1.png") no-repeat center;
+		background-size:100% auto;
+		font-size: 0.6em;
+		line-height: 30px;
+		text-align: center;
+		position: absolute;
+		margin: auto;
+		top:0;
+		bottom:0;
+		color:#eb718f;
+	}
+	.center ul .bottom a{
+		font-size: 0.6em;
+		display: inline-block;
+		border:1px #efb033 solid;
+		height: 22px;
+		line-height: 22px;
+		color:#666666;
+		width: 30%;
+		margin-top: 8px;
+		border-radius:3px;
+		
+	}
+
+
+	.all_c{
+ 		width: 78px;
+ 		height:78px;
+ 		margin: 0 auto;
+ 		overflow: hidden;
+ 	}
+ 	.all_ul>li ul .right	.circleProgress{
+		     width: 98%;
+			 height: 98%;
+			 border-radius:50%;
+			 background: -webkit-linear-gradient(left,#eb6b90 ,#f1c728,#1cb1b3,#3e64ae);     /* 背景色渐变 */
+	 		position: absolute;
+	 		border:1px #efefef solid;
+	 		left:0px;
+	 		top:0px;
+	  		
+		}
+	.all_ul>li ul .right	.circleProgress_weep{
+			 width: 83%;
+			 height: 83%;
+			 position: absolute;
+			 border-radius:50%;
+			 background:white;
+			 border:1px rgba(0, 0, 0,0) solid;
+			 box-sizing:border-box;
+			 text-align: center;
+			 margin: auto;
+			 top:0;
+			 right: 0px;
+			 left:0;
+			 bottom:0;
+		}
+	.all_ul>li ul .right	.left{
+			width:50%;height: 99%;
+			position: absolute;
+			left: -1.5px;
+			border:1px transparent solid;
+			bottom:0.5px;
+		}
+	.all_ul>li ul .right .right{
+			width:50%;height: 99%;
+			position: absolute;
+			right: -1px;
+			border:1px transparent solid;
+			bottom:0.5px;
+			
+		}
+	.all_ul>li ul .right	.ra{
+			width: 160%;
+			height: 82%;
+			border-radius: 50%;
+			position: absolute;
+			border:9px transparent solid;
+		}
+	.all_ul>li ul .right	.left_ra{
+			left:0;
+			 border-bottom:9px solid #efefef;
+		     border-left:9px solid #efefef;
+		   
+		}
+	.all_ul>li ul .right	.right_ra{
+			right: 0;
+			 border-top:9px solid #efefef;
+		     border-right:9px solid #efefef;
+		    
+		}
+	.all_ul>li ul .right .circleProgress .i_top{
+		margin-top: 10px;
+		font-style:normal;
+		font-size: 8px;
+		color:#7c7c7c;
+	}
+	.all_ul>li ul .right .circleProgress .sorce{
+		display:block;
+		font-style:normal;
+		color:#515151;
+		
+	}
+	.all_ul>li ul .right .circleProgress .i_bottom{
+		display:block;
+		font-style:normal;
+		color:#515151;
+		font-size: 4px;
+	}
+		
+	/*圆环 end*/
+		/*付款 start*/
+	.call{
+		height:70%;
+		position: fixed;
+		z-index: 999999;
+		margin:auto;
+		top:10%;
+		right:0;
+		left:0;
+		background: -webkit-linear-gradient(top, #ef6a8f,#f17d8a,#f1c728,#cfc36b,#1cb1b3,#3e64ae);
+		display: none;
+	}
+	.call .no{
+		position: absolute;
+		margin: auto;
+		top:15px;
+		left: 20px;
+		max-height: 40px;
+	}
+	.call .call_content{
+		width: 80%;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top:70px;
+		height: 75%;
+		text-align: center;
+	}
+	.call .call_content p{
+		color:#ffffff;
+		font-size: 0.8em;
+		letter-spacing: 5px;
+	}
+	.call .call_content .logo{
+		height: 50px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+	.call .call_content span{
+		display: inline-block;
+		width: 80%;
+		color: #ffffff;
+		font-size: 1.5em;
+		border-bottom: 1px #ffffff solid;
+	}
+	.call .call_content span i{
+		font-style: normal;
+		font-size: 1.5em;
+	}
+	.call .call_content em{
+		font-style: normal;
+		display:inline-block;
+		width:80%;
+		color:#ffffff;
+		font-size: 0.9em;
+		line-height: 40px;
+		border-bottom: 1px #ffffff solid;
+	}
+	.call .call_content em i{
+		font-size: 1.1em;
+		font-style: normal;
+	}
+	.call .call_content a{
+		display:inline-block;
+		width:80%;
+		color:#ffffff;
+		font-size: 0.7em;
+		line-height: 15px;
+		margin-bottom: 10px;
+		margin-top: 5px;
+	}
+	.call .call_content ul{
+		width: 100%;
+		height: 40px;
+		position: absolute;
+		bottom:0;
+		list-style: none;
+	}	
+	.call .call_content ul li{
+		width: 40%;
+		height: 100%;
+		position:relative;
+		background-color: #ffffff;
+		border-radius:5px;
+		color:#ffffff;
+	}
+	.call .call_content ul .left{
+		float: left;
+	}
+	.call .call_content ul .right{
+		float: right;
+	}
+	.call .call_content ul li span{
+		width: 95%;
+		height: 90%;
+		display: inline-block;
+		background: -webkit-linear-gradient(left, #ef6a8f,#cfc36b,#1cb1b3,#3e64ae);
+		position: absolute;
+		margin: auto;
+		right:2.5%;
+		bottom:2%;
+		border-radius:5px;
+		font-size: 1em;
+		line-height: 35px;
+	}
+	/*付款 end*/
+		/*遮罩层 start*/
+	.shile{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background-color: rgba(0,0,0,.7);
+		display: none;
+	}
+	/*遮罩层 end*/
+	@media screen and (min-width: 1000px) {
+		.call{width: 300px;}
+	}
+	@media (min-width: 300px) and (max-width: 700px) {
+		.call{width: 85%;}
+	}

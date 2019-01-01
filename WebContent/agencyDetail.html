@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no, email=no" />
+	<link type="text/css" rel="stylesheet" href="css/mycss.css" />
+	<link type="text/css" rel="stylesheet" href="css/agencyDetail.css" />
+
+	<title>代办专家详情</title>
+</head>
+
+<body>
+	<div class="bg"></div>
+	<div class="all">
+		<div class="all_top">
+			<div class="top_content">
+				<ul>
+					<li class="left">
+						<div class="imgTitle"></div>
+					</li>
+					<li class="center">
+						<ul>
+							<li>
+								<span class="name"></span>&nbsp;&nbsp;
+								<!-- <span class="sex"></span>&nbsp;&nbsp; -->
+								<span class="type"></span>
+							</li>
+							<li>
+								<div>
+									<div></div>
+								</div>
+							</li>
+							<li class="img">
+								<span></span>人已评价</li>
+						</ul>
+					</li>
+					<li class="right score"></li>
+				</ul>
+			</div>
+		</div>
+		<div class="all_content">
+			<ul>
+				<li class="title">
+					<img alt="" src="img/eDetail_icon2.png">
+					<span>个人专长</span>
+				</li>
+				<li class="personal">
+					<!-- <a>购房资格</a>
+					<a>贷款服务</a>
+					<a>送件</a>
+					<a>贷款服务</a> -->
+				</li>
+				<li class="title">
+					<img alt="" src="img/eDetail_icon3.png">
+					<span>个擅长领域</span>
+				</li>
+				<li class="good">
+					<!-- <a class="one_a">住宅</a>
+					<a>办公</a>
+					<a>别墅</a>
+					<a>商铺</a> -->
+				</li>
+				<li class="title">
+					<img alt="" src="img/eDetail_icon4.png">
+					<span>熟悉区域</span>
+				</li>
+				<li class="area">
+					<!-- <a class="one_a">嘉定蓝翔</a> -->
+				</li>
+				<li class="title">
+					<img alt="" src="img/eDetail_icon5.png">
+					<span>资质详述</span>
+				</li>
+				<li>
+					<ul>
+						<li>
+							<span class="top workingYear"></span>
+							<span class="bottom">从业年数</span>
+						</li>
+						<li>
+							<span class="top age"></span>
+							<span class="bottom">年龄</span>
+						</li>
+						<li>
+							<span class="top nation"></span>
+							<span class="bottom">民族</span>
+						</li>
+						<li class="no_bor">
+							<span class="top address"></span>
+							<span class="bottom">籍贯</span>
+						</li>
+						<li class="shirt_top">
+							<span class="top height"></span>
+							<span class="bottom">身高</span>
+						</li>
+						<li class="shirt_top">
+							<span class="top weight"></span>
+							<span class="bottom">体重</span>
+						</li>
+						<li class="shirt_top">
+							<span class="top maritalStatus"></span>
+							<span class="bottom">婚姻状况</span>
+						</li>
+						<li class="no_bor shirt_top">
+							<span class="top health"></span>
+							<span class="bottom">健康状况</span>
+						</li>
+					</ul>
+				</li>
+				<li class="info">
+					<b>电子邮件：</b>
+					<span class="email"></span>
+				</li>
+				<li class="info">
+					<b>毕业院校：</b>
+					<span class="graduation"></span>
+				</li>
+				<li class="info">
+					<b>资质证书：</b>
+					<span class="certificate"></span>
+				</li>
+				<li class="info">
+					<b>工作经历：</b>
+					<span class="job"></span>
+				</li>
+				<!-- <li class="info">
+					<b>&nbsp;&nbsp;&nbsp;</b>
+					<span style="text-align: right;" class=""></span>
+				</li> -->
+				<li class="info">
+					<b>个人成就：</b>
+					<span class="achievement"></span>
+				</li>
+				<li class="video" id="play">
+					<img alt="" src="img/videoPlay.png">
+					<video id="videoId" src="video/video4.mp4" poster="img/video1.png" controls="controls" loop="loop"></video>
+				</li>
+				<li class="title userEvaluate">
+					<img alt="" src="img/eDetail_icon1.png">
+					<span>用户评价</span>
+				</li>
+				<!-- <li>
+					<div class="div_left">
+						<span class="one_span"></span>
+					</div>
+					<div class="div_right">
+						<div class="div_top"><span class="span_name">猫小胖pang</span><span class="span_score">4.7</span><span  class="span_time">2018-3-15</span></div>
+						<div class="div_bottom">好房子，租了一年房东爽气。</div>
+					</div>
+				</li>
+				<li>
+					<div class="div_left">
+						<span class="two_span"></span>
+					</div>
+					<div class="div_right">
+						<div class="div_top"><span class="span_name">猫小胖pang</span><span class="span_score">4.7</span><span  class="span_time">2018-3-15</span></div>
+						<div class="div_bottom">好房子，租了一年房东爽气。</div>
+					</div>
+				</li> -->
+				<!-- <li class="vip_li">
+					<hr>
+					<span class="vip">VIP服务</span>
+				</li> -->
+			</ul>
+			<div class="userReviews" id="userReviews">
+			</div>
+		</div>
+
+		<div class="bottom_btn">
+			<div class="bottom_left">在线咨询</div>
+			<div class="bottom_right">找TA代办</div>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/agencyDetail.js"></script>
+</body>
+
+</html>

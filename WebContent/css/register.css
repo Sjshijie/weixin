@@ -1,0 +1,152 @@
+body,html{
+		height:100%;
+		overflow: hidden;
+	}
+	@media screen and (min-width: 1000px) {
+		.content .title{height: 60px;line-height: 60px;}
+		.content_ul li{height: 40px;line-height:40px;}
+	}
+	@media (min-width: 350px) and (max-width: 1000px) {
+		.content .title{height: calc(100vw/5.7);line-height: calc(100vw/5.7);}
+		.content_ul li{height: calc(100vw/8.6);line-height: calc(100vw/8.6);}
+	}
+	@media (min-width: 300px) and (max-width: 350px) {
+		.content .title{height: calc(100vw/5.7);line-height: calc(100vw/5.7);}
+		.content_ul li{height: calc(100vw/8.6);line-height: calc(100vw/8.6);}
+	}
+	.all{
+		height:100%;
+		background: -webkit-linear-gradient(top, #ef6a8f,#f6c54a,#98bd8b,#2f7bb0);
+	}
+	.content{
+		width: 90%;
+		display: inline-block;
+	}
+	.content .title{
+		width:100%;
+		margin-top: 10px;
+	}
+	.content .title img{
+		width: 45%;
+		display: inline-block;
+		vertical-align: middle;
+		
+	}
+	.content_ul{
+		width: 100%;
+		height: auto;
+		list-style: none;
+		display: inline-block;
+	}
+	.content_ul li{
+		margin-top: 10px;
+		background-color: rgba(255,255,255,.4);
+		border-radius:10px;
+		text-align: left;
+		padding-left: 20px;
+	}
+	.content_ul .two_li{
+		padding-left: 25px;
+	}
+	.content_ul .last_left{
+		width: 54.5%;
+		float: left;
+	}
+	.content_ul .last_right{
+		width: 32%;
+		float: right;
+		color:#777777;
+		padding: 0;
+		text-align: center;
+		font-size: 0.95em;
+	}
+	.content_ul li img{
+		max-height: 25px;
+		max-width: 20px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.content_ul li input{
+		width: 75%;
+		height: 70%;
+		border: 0;
+		background: transparent;
+		vertical-align: middle;
+		outline: none;
+		font-size: 0.9em;
+		margin-left: 10px;
+		color:#f9f1da;
+	}
+	 input::-webkit-input-placeholder{
+            color:#f9f1da;
+     }
+     input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            color:#f9f1da;
+     }
+     input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            color:#f9f1da;
+     }
+     input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+            color:#f9f1da;
+     }
+     .agreement{
+     	width: 100%;
+     	height: 40px;
+     	margin-top: 10px;
+     	font-size: 0.78em;
+     	color:#ffffff;
+     	line-height: 40px;
+     }
+     .agreement .left{
+     	display: inline-block;
+     	width: 15px;
+     	height: 15px;
+     	line-height: 40px;
+     	float:left;
+     	margin-top: 10px;
+     	border-radius:3px;
+     	border:1px #ffffff solid;
+     }
+     .agreement .right{
+     	float: right;
+     	display: inline-block;
+     }
+     .agreement_ok{
+     	background: url("../img/agreement.png") no-repeat center;
+     	background-size:70%;
+     }
+     .btn{
+     	width: 100%;
+     	height: 40px;
+     	margin-top: 20px;
+     	color:#ffffff;
+     }
+     .btn .btn_no{
+     	height: 100%;
+     	width: 45%;
+     	background: -webkit-linear-gradient(left, #f0728d,#efaf4e,#5eb185,#3469a9);
+     	float: left;
+     	border: 1.5px #ffffff solid;
+     	text-align: center;
+     	line-height: 40px;
+     }
+      .btn .btn_ok{
+     	height: 100%;
+     	width: 45%;
+     	background: -webkit-linear-gradient(left, #f0728d,#efaf4e,#5eb185,#3469a9);
+     	float: right;
+     	border: 1.5px #ffffff solid;
+     	text-align: center;
+     	line-height: 40px;
+     }
+     .register_logo{
+     	max-width: 25%;
+     	margin-top: 30px;
+     }
+     .register_title{
+     	color:#dfebf1;
+     	letter-spacing: 3px;
+     	display: inline-block;
+     	width: 100%;
+     	margin-top: 10px;
+     }

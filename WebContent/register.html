@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no" >  
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>注册</title>
+
+<link  type="text/css" rel="stylesheet" href="css/register.css"/>
+<link  type="text/css" rel="stylesheet" href="css/all1.css"/>
+<style>
+	body{
+		position: relative;
+	}
+	.layout{
+		display: none; 
+		position: absolute;
+		width:50%;
+		height: 30%;
+		background: rgba(0,0,0,0.5);
+		left:0;
+		bottom: 0;
+		right: 0;
+		top:0;
+		margin:auto;
+	}
+	.layout-contain{
+		width: 100%;
+		height: 100%;
+		font-size: 20px;
+		color:white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
+</head>
+<body>
+	<div class="all">
+		<!-- 内容 start -->
+		<div class="content">
+			<!-- content title start -->
+			<div class="title">
+				<img alt="" src="img/register_title.png">
+			</div>
+			<ul class="content_ul">
+				<li class="two_li">
+					<img alt="" src="img/phone.png">
+					<input type="text" placeholder="请输入您的手机号">
+				</li>
+				<li class="last_left">
+					<img alt="" src="img/code.png ">
+					<input type="text" placeholder="请输入您的验证码">
+				</li>
+				<li class="last_right">
+					发送验证码
+				</li>
+			</ul>
+			<div class="agreement">
+				<span class="left agreement_ok"></span>
+				<span class="right">我已经仔细阅读《派拍房服务协议》并同意遵守</span>
+			</div>
+			<div class="btn">
+				<span class="btn_no">取消</span>
+				<span class="btn_ok">注册</span>
+			</div>
+			<img class="register_logo" alt="" src="img/register_logo.png">
+			<span class="register_title">卖家买家自己的租赁平台</span>
+			<!-- content title end -->
+		</div>
+		<!-- 内容 end -->
+		<div class="layout">
+			<div class="layout-contain"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no" >  
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>房源列表</title>
+<link  type="text/css" rel="stylesheet" href="css/all.css"/>
+<link  type="text/css" rel="stylesheet" href="css/collectionList.css"/>
+
+
+</head>
+<body>
+	<div class="all">
+		<!-- 内容 start -->
+		<div class="content">
+			<div class="content_content">
+				<!-- one -->
+				<!-- two -->
+<!-- 				<div class="content_content_bottom last">
+					<div class="div_one">
+						<ul>
+							<li class="li_left"><img alt="" src="upload/room.jpg"></li>
+							<li class="li_right">
+									<div class="all">
+										<div class="circleProgress">
+											<div class="circleProgress_weep">
+												<i class="i_top">抢手率</i>
+												<i class="sorce">10%</i>
+												<i class="i_bottom">0人收藏</i>
+											</div>
+									    </div>
+									    <div class="left">
+									    	  <div class="left_ra ra"></div>
+									    </div>
+										<div class="right">
+											  <div class="right_ra ra"></div>
+										</div>
+									 </div>  
+							</li>
+							<li class="li_center">
+								<p class="title_p">静安寺小资美宅 </p>
+								<p class="content_p">2室1厅 88m² 南</p>
+								<p class="content_p">静安豪景苑</p>
+							</li>
+						</ul>
+					</div>
+					<div class="div_two">
+						<ul>
+							<li class="left_li">4300/月</li>
+							<li class="right_li">
+								<ul>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>精装<a>家具齐全</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>11号线<a>近地铁</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>万达广场<a>近商圈</a></span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="div_three">
+						<ul>
+							<li class="left_li">
+								专家点评
+							</li>
+							<li class="right_li">
+								<div class="text">
+									<span>天下第一好房</span>
+								</div>
+								<div class="img">
+									<div class="img_img"></div>
+								</div>
+								<div class="name">王丹初级</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		<!-- 内容 end -->
+
+
+		
+	</div>
+	<script id="collectionList" type="text/html">
+			<%for(var i=0;i<collectionList.length;i++){%>
+				<div class="content_content_bottom" data-houseId=<%=collectionList[i].houseId%>>
+					<div class="div_one">
+						<ul>
+							<li class="li_left"><img alt="" src=<%=collectionList[i].photoUrl%>></li>
+							<li class="li_right">
+									<div class="all">
+										<!-- <div class="circleProgress">
+											<div class="circleProgress_weep">
+												<i class="i_top">抢手率</i>
+												<i class="sorce">4.0%</i>
+												<i class="i_bottom">0人收藏</i>
+											</div>
+									    </div>
+									    <div class="left">
+									    	  <div class="left_ra ra"></div>
+									    </div>
+										<div class="right">
+											  <div class="right_ra ra"></div>
+										</div> -->
+										<canvas class="circle" style="width:90px;height:90px"></canvas>
+									 </div>  
+							</li>
+							<li class="li_center">
+								<p class="title_p"><%=collectionList[i].houseModel%> </p>
+								<p class="content_p"><%=collectionList[i].houseModel%> <%=parseInt(collectionList[i].totalArea)%>m² <%=collectionList[i].towards%></p>
+								<p class="content_p"><%=collectionList[i].villageName%></p>
+							</li>
+						</ul>
+					</div>
+					<div class="div_two">
+						<ul>
+							<li class="left_li"><%=collectionList[i].rentMoney%></li>
+							<li class="right_li">
+								<ul>
+									<!-- <li>
+										<img alt="" src="img/icon1.png">
+										<span>精装<a>家具齐全</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>11号线<a>近地铁</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>万达广场<a>近商圈</a></span>
+									</li> -->
+									<%if(collectionList[i].houseDec){%>
+										<li>
+											<img alt="" src="img/icon1.png">
+											<span><%=collectionList[i].houseDec%><a>家具齐全</a></span>
+										</li>
+									<%}%>
+									<%if(collectionList[i].houseDec){%>
+										<li>
+											<img alt="" src="img/icon1.png">
+											<span><%=collectionList[i].houseDec%><a>家具齐全</a></span>
+										</li>
+									<%}%>
+									<%if(collectionList[i].houseDec){%>
+										<li>
+											<img alt="" src="img/icon1.png">
+											<span><%=collectionList[i].houseDec%><a>家具齐全</a></span>
+										</li>
+									<%}%>
+
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="div_three">
+						<ul>
+							<li class="left_li">
+								专家点评
+							</li>
+							<li class="right_li">
+								<div class="text">
+									<span>天下第一好房</span>
+								</div>
+								<div class="img">
+									<div class="img_img"></div>
+								</div>
+								<div class="name">王丹初级</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			<%}%>
+	</script>
+	<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+	
+	<script type="text/javascript" src="js/collectionList.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/circle.js"></script>
+</body>
+</html>

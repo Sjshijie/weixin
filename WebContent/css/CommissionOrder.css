@@ -1,0 +1,41 @@
+/* CSS Document */
+@charset "utf-8";
+
+.waptable .module1{width:90%; margin:4% 5%; float:left; position:relative;}
+.waptable .module1 i{width:23%; max-height:146px; overflow:hidden; text-align:center; float:left; margin-right:4%;border-radius:50%;}
+.waptable .module1 i img{width:100%; height: 100%}
+.waptable .module1 span{margin:1.5% 0; float:left; font-size:1.125em; width:73%; height:30px; line-height:30px;overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;}
+.waptable .module1 span h3{margin-bottom:1%; font-weight:bold; float:left;}
+.waptable .module1 span em{float:right; font-style:normal;}
+.waptable .module1 span b{float:right; color:#eb718f; font-size:1.5em; line-height:27px;}
+
+.waptable .module2{width:90%; margin:0 5%; float:left; position:relative;}
+.waptable .module2 li{float:left; width:100%; height:20px; line-height:24px; margin-bottom:4%; font-size:1em;}
+.waptable .module2 li .icon1{background:url(../img/commission_icon01.png) no-repeat 0 50%; width:20px; height:20px; background-size:auto 97%; float:left; margin-right:1.5%;}
+.waptable .module2 li .icon2{background:url(../img/commission_icon02.png) no-repeat 0 50%; width:20px; height:20px; background-size:auto 97%; float:left; margin-right:1.5%;}
+.waptable .module2 li .icon3{background:url(../img/commission_icon03.png) no-repeat 0 50%; width:20px; height:20px; background-size:auto 97%; float:left; margin-right:1.5%;}
+.waptable .module2 li b{float:left; margin-right:7%;width: 35%}
+.waptable .module2 li em{float:left; font-weight:bold; font-style:normal;width: 40%;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+
+.waptable .module3{width:90%; margin:2.5% 5% 6.5% 5%; float:left; position:relative;}
+.waptable .module3 li{float:left; width:33.3%; text-align:center;}
+.waptable .module3 li span{border:1px solid #737373; padding:5% 10%; border-radius:5px;}
+
+.waptable .module4{width:100%; text-align:center; background-color:#d3d1d1; font-size:1.5em; float:left; padding:2.5% 0;}
+
+.waptable .module5{width:90%; margin:4% 5%; float:left;}
+.waptable .module5 dd{width:100%; float:left; position:relative; border-bottom:1px solid #d3d1d1; padding-bottom:4%;}
+.waptable .module5 .M5left{width:21%; height:100%; float:left; position:absolute;}
+.waptable .module5 .M5left img{width:100%; height:auto; border-radius:50%; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; z-index:20; float:left;}
+.waptable .module5 .M5mid{width:52%; float:left; margin-left:21%; margin-top:4%;}
+.waptable .module5 .M5mid .M5info{width:90%; margin:0 5% 5% 5%; position:relative; padding-bottom:5%; border-bottom:1px solid #d3d1d1;}
+.waptable .module5 .M5mid .M5info b{font-size:1.375em;}
+.waptable .module5 .M5mid .M5info span{position:absolute; z-index:20; right:0; top:0; margin-top:2%; background:url(../img/houseorder_but01.png) no-repeat 0 50%; padding:0 4%;  height:30px; line-height:33px; background-size:auto 97%; font-size:1.125em;}
+.waptable .module5 .M5mid ul{width:90%; margin:0 5%;}
+.waptable .module5 .M5mid ul li{float:left; border:1px solid #efb033; border-radius:5px; padding:2.5% 4%; margin-right:3.5%;}
+.waptable .module5 .M5right{width:27%; float:left; background:url(../img/commission_icon04.png) no-repeat 50%; padding:7% 0; background-size:100% auto; float:left; text-align:center;}
+.waptable .module5 .M5right p{font-size:0.875em;}
+.waptable .module5 .M5right b{font-size:1.5em;}
+

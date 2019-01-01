@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no" >  
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>房源详情</title>
+<link  type="text/css" rel="stylesheet" href="css/all.css"/>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet" href="css/swiper.min.css">
+<link  type="text/css" rel="stylesheet" href="css/detail.css"/>
+</head>
+<body>
+	<!-- 遮罩层 start -->
+	<div class="shile"></div>
+	<!-- 遮罩层 end -->
+	<!-- 未认证 start -->
+	<div class="call gotoapp">
+		<div class="gotoapp_center">
+			您还没有实名认证，请前往派拍房App进行实名认证
+		</div>
+		<div class="gotoapp_btn">
+			<div class="gotoapp-left">取消</div>
+			<div class="gotoapp-right">立即前往</div>
+		</div>
+	</div>
+	<!-- 未认证 end -->
+	<!-- 付款提醒 start -->
+	<div class="call call_pay">
+		<div class="call_pay-no"></div>
+		<img class="center" alt="" src="img/icon13.png">
+		<img class="center_title" alt="" src="img/icon11.png">
+		<div class="center_btn">我懂了！</div>
+	</div>
+	<!-- 付款提醒 end -->
+	<!-- 拨号弹窗  start-->
+	<div class="call call_phone">
+		<img class="no" alt="" src="img/icon10.png">
+		<div class="call_content">
+			<p>买家卖家自己的租售平台</p>
+			<img class="logo" alt="" src="img/logo.png">
+			<span>房东通话时间</span>
+			<em>工作日：8:00--22:00<br><a>休息日：&nbsp;&nbsp;&nbsp;不限</a></em>
+			<a>请在房东确认时间内容选择拨号，如不在服务时间内请稍后再拨。</a>
+			<ul>
+				<li>
+					<a href="tel:13764567708"><span>拨号</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 拨号弹窗  end--> 
+	<!-- 付款弹窗  start-->
+	<div class="call pay">
+		<img class="no" alt="" src="img/icon10.png">
+		<div class="call_content">
+			<p>买家卖家自己的租售平台</p>
+			<img class="logo" alt="" src="img/logo.png">
+			<span>支付<i class="big">50</i>π币</span>
+			<em>当前账户余额：<i>300</i>&nbsp;π币</em>
+			<a>系统默认余额支付，如您余额不足请及时充值后再支付，感谢您的配合。</a>
+			<ul>
+				<li class="left">
+					<span>充值</span>
+				</li>
+				<li class="right">
+					<span>付款</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 付款弹窗  end-->
+	<div class="all">
+		<!-- 头部 start -->
+		<div class="top">
+			<!-- <img class="big_room" alt="" src="upload/room.jpg">
+			<img class="collection" alt="" src="img/collection.png"> -->
+			<img class="collection" alt="" src="img/collection.png">
+			 <div class="swiper-container">
+		        <div class="swiper-wrapper" id="configInfos">
+		            <!-- <div class="swiper-slide"><img class="big_room" alt="" src="upload/room.jpg"></div>
+		            <div class="swiper-slide"><img class="big_room" alt="" src="upload/room.jpg"></div>
+		            <div class="swiper-slide"><img class="big_room" alt="" src="upload/room.jpg"></div> -->
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		        <!-- Add Navigation -->
+		        <!-- <div class="swiper-button-prev"></div>
+		        <div class="swiper-button-next"></div> -->
+		    </div>
+		</div>
+		<!-- 头部 end -->
+		<!-- 内容 start -->
+		<div class="content">
+			<div class="content_content">
+				<p class="title"></p>
+				<div class="comment">
+					<ul>
+							<li class="left_li">
+								专家点评
+							</li>
+							<li class="right_li">
+								<div class="text">
+									<span>天下第一好房</span>
+								</div>
+								<div class="img">
+									<div class="img_img"></div>
+								</div>
+								<div class="name"></div>
+							</li>
+						</ul>
+				</div>
+				<ul class="ul_1">
+					<li>
+						<span class="ul_1_span_top rentMoney"></span>
+						<span class="ul_1_span_bottom">租金</span>
+					</li>
+					<li>
+						<span class="ul_1_span_top roomType1">合租</span>
+						<span class="ul_1_span_bottom">户型</span>
+					</li>
+					<li class="last_li">
+						<span class="ul_1_span_top totalArea"></span>
+						<span class="ul_1_span_bottom">面积</span>
+					</li>
+				</ul>
+				<ul class="ul_1 ul_2">
+					<li>
+						<span class="ul_1_span_top">
+							<img alt="" src="img/icon4.png">
+						</span>
+						<span class="ul_1_span_bottom">浏览人数</span>
+						<span class="ul_1_span_bottom lookNum"></span>
+					</li>
+					<li>
+						<span class="ul_1_span_top">
+							<img alt="" src="img/icon5.png">
+						</span>
+						<span class="ul_1_span_bottom">收藏人数</span>
+						<span class="ul_1_span_bottom collectNum"></span>
+					</li>
+					<li class="last_li">
+						<span class="ul_1_span_top">
+							<img alt="" src="img/icon6.png">
+						</span>
+						<span class="ul_1_span_bottom">预约人数</span>
+						<span class="ul_1_span_bottom orderNum"></span>
+					</li>
+				</ul>
+				<div class="info">
+					出租信息
+				</div>
+				<ul class="ul_3 house_info">
+					
+				</ul>
+				<div class="metro metroName">
+					<p>附近地铁</p>
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="metro shop traName">
+					<p>附近商圈</p>
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="metro shop landlord">
+					<p>房东寄语</p>
+					<span></span>
+				</div>
+				<div class="metro shop require">
+					<p>租客要求</p>
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="metro shop last_info">
+					<p>房源配置</p>
+					<ul>
+						<li class="one">床</li>
+						<li>衣柜</li>
+						<li>沙发</li>
+						<li class="one">书桌</li>
+						<li>餐桌</li>
+						<li>椅子</li>
+					</ul>
+				</div>
+				<div class="info">
+					房屋信息
+				</div>
+				<ul class="ul_3">
+					<li>小区名：<b class="cellName"></b></li>
+					<li>总户：<span class="totalfamily"></span></li>
+					<li>环线：<span class="loopLine"></span></li>
+					<li>绿化率：<span class="greeningRate"></span></li>
+					<li>物业费：<b class="propertyCosts"></b></li>
+					<li>建立年代：<span class="builtYears"></span>年</li>
+					<li>物业公司：<span class="propertyCompany"></span></li>
+					<li>停车位：<b class="parkingSpace"></b>个</li>
+					<li>总建筑面积：<span class="builUpArea"></span>m²</li>
+					<li>开发商：<span class="developers"></span></li>
+					<li class="long">容积率：<span class="volumeRatio"></span></li>
+					<li class="more_long">
+						<img alt="" src="img/icon14.png">
+						点击展开
+					</li>
+					<li class="long long_long"><span class="span_1">交通/地铁：</span><span class="metro-under"></span></li>
+					<li class="long long_long"><span class="span_1">公交车：</span><span class="bus"></span> </li>
+					<li class="long long_long"><span class="span_1">教育/幼儿园：</span><span class="kindergarten"></span></li>
+					<li class="long long_long"><span class="span_1">中小学：</span><span class="priMiSchools"></span></li>
+					<li class="long long_long"><span class="span_1">医院：</span><span class="hospital"></span></li>
+					<li class="long long_long"><span class="span_1">购物/商场：</span><span class="market"></span></li>
+					<li class="long long_long"><span class="span_1">超市：</span><span class="supermarket"></span></li>
+					<li class="long long_long"><span class="span_1">菜场：</span><span class="theMarket"></span></li>
+					<li class="long long_long"><span class="span_1">生活/银行：</span><span class="bank"></span></li>
+					<li class="long long_long"><span class="span_1">餐厅：</span><span class="restaurant"></span></li>
+					<li class="long long_long"><span class="span_1">咖啡厅：</span><span class="cafe"></span></li>
+					<li class="long long_long"><span class="span_1">娱乐/公园：</span><span class="park"></span></li>
+					<li class="long long_long"><span class="span_1">KTV：</span><span class="ktv"></span></li>
+					<li class="long long_long"><span class="span_1">健身房：</span><span class="gym"></span></li>
+					<li class="long long_long"><span class="span_1">体育馆：</span><span class="gymnasium"></span></li>
+					<li class="long long_long"><span class="span_1">电影院：</span><span class="cinema"></span></li>
+				</ul>
+				<div class="info">
+					配套信息
+				</div>
+				<div class="banner">
+					 <div class="swiper-container">
+				        <div class="swiper-wrapper" id="comMatchingImg">
+				            <!-- <div class="swiper-slide"><img class="big_room" alt="" src="upload/room.jpg"></div>
+				            <div class="swiper-slide"><img class="big_room" alt="" src="upload/room.jpg"></div>
+				            <div class="swiper-slide"><img class="big_room" alt="" src="upload/room.jpg"></div> -->
+				        </div>
+				        <!-- Add Pagination -->
+				        <div class="swiper-pagination"></div>
+				        <!-- Add Navigation -->
+				        <!-- <div class="swiper-button-prev"></div>
+				        <div class="swiper-button-next"></div> -->
+				    </div>
+				</div>
+				<div class="map" id="map">
+				
+				</div>
+				<div class="info cai">
+					社区点评
+				</div>
+				<div class="userReviews">
+					
+				</div>
+				<!-- <div class="all_main">
+					<div class="all_main_left">
+						参与人数
+					</div>
+					<div id="main">
+									
+					</div>
+				</div>
+				<div class="btn">
+					<div>我要猜价</div>
+				</div>
+				<div class="info">
+					拍你喜欢
+				</div> -->
+
+				<!-- one -->
+				<div class="pushUserLike">
+					<div class="info cai">
+						推你喜欢
+					</div>
+				</div>
+				<!-- <div class="content_content_bottom">
+					<div class="div_one">
+						<ul>
+							<li class="li_left"><img alt="" src="upload/room.jpg"></li>
+							<li class="li_right">
+									<div class="all">
+										<div class="circleProgress">
+											<div class="circleProgress_weep">
+												<i class="i_top">抢手率</i>
+												<i class="sorce">4.0%</i>
+												<i class="i_bottom">0人收藏</i>
+											</div>
+									    </div>
+									    <div class="left">
+									    	  <div class="left_ra ra"></div>
+									    </div>
+										<div class="right">
+											  <div class="right_ra ra"></div>
+										</div>
+									 </div>  
+							</li>
+							<li class="li_center">
+								<p class="title_p">静安寺小资美宅 </p>
+								<p class="content_p">2室1厅 88m² 南</p>
+								<p class="content_p">静安豪景苑</p>
+							</li>
+						</ul>
+					</div>
+					<div class="div_two">
+						<ul>
+							<li class="left_li">4300/月</li>
+							<li class="right_li">
+								<ul>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>精装<a>家具齐全</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>11号线<a>近地铁</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>万达广场<a>近商圈</a></span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="div_three">
+						<ul>
+							<li class="left_li">
+								专家点评
+							</li>
+							<li class="right_li">
+								<div class="text">
+									<span>天下第一好房</span>
+								</div>
+								<div class="img">
+									<div class="img_img"></div>
+								</div>
+								<div class="name">王丹初级</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				one end
+				 two start
+				<div class="content_content_bottom last">
+					<div class="div_one">
+						<ul>
+							<li class="li_left"><img alt="" src="upload/room.jpg"></li>
+							<li class="li_right">
+									<div class="all">
+										<div class="circleProgress">
+											<div class="circleProgress_weep">
+												<i class="i_top">抢手率</i>
+												<i class="sorce">4.0%</i>
+												<i class="i_bottom">0人收藏</i>
+											</div>
+									    </div>
+									    <div class="left">
+									    	  <div class="left_ra ra"></div>
+									    </div>
+										<div class="right">
+											  <div class="right_ra ra"></div>
+										</div>
+									 </div>  
+							</li>
+							<li class="li_center">
+								<p class="title_p">静安寺小资美宅 </p>
+								<p class="content_p">2室1厅 88m² 南</p>
+								<p class="content_p">静安豪景苑</p>
+							</li>
+						</ul>
+					</div>
+					<div class="div_two">
+						<ul>
+							<li class="left_li">4300/月</li>
+							<li class="right_li">
+								<ul>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>精装<a>家具齐全</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>11号线<a>近地铁</a></span>
+									</li>
+									<li>
+										<img alt="" src="img/icon1.png">
+										<span>万达广场<a>近商圈</a></span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="div_three">
+						<ul>
+							<li class="left_li">
+								专家点评
+							</li>
+							<li class="right_li">
+								<div class="text">
+									<span>天下第一好房</span>
+								</div>
+								<div class="img">
+									<div class="img_img"></div>
+								</div>
+								<div class="name">王丹初级</div>
+							</li>
+						</ul>
+					</div>
+				</div> -->
+				<!-- two end-->
+				<!-- 底部 start -->
+				<div class="bottom">
+					<ul>
+						<li class="show">
+							<span><img alt="" src="img/icon7.png"></span>
+							<span>在线咨询</span>
+						</li>
+						<li>
+							<span><img alt="" src="img/icon8.png"></span>
+							<span>分享好友</span>
+						</li>
+						<li class="after to_call">
+							<span>联系房东 我要租</span>
+							<img alt="" src="img/icon9.png">
+						</li>
+					</ul>
+				</div>
+				<!-- 底部 end -->
+			</div>
+		</div>
+		<!-- 内容 end -->
+	</div>
+</body>
+<script src="js/echarts.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=slQpuhwtQ6xfmKH1D4fdN4ajLyoynayo"></script><!-- 地图 -->
+<script type="text/javascript">
+
+//banner加载
+var mySwiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    autoplay:3000,
+    paginationClickable: true,
+	autoplayDisableOnInteraction : false,
+	loop:true,
+	centeredSlides : true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    // Enable debugger
+    debugger: true,
+    observer:true,//修改swiper自己或子元素时，自动初始化swiper
+    observeParents:true,//修改swiper的父元素时，自动初始化swiper
+    mode: 'horizontal',
+	autoHeight:true
+});
+
+
+
+</script>
+<script type="text/javascript" src="js/detail.js"></script>
+
+
+
+</html>

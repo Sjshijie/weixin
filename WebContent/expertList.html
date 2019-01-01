@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no" >  
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<link  type="text/css" rel="stylesheet" href="css/mycss.css"/>
+<link  type="text/css" rel="stylesheet" href="css/expertList.css"/>
+
+<title>专家列表</title>
+</head>
+<body>
+	<div class="all" id="list">
+		
+
+		
+	
+	</div>
+
+	<script id="specialist" type="text/html">
+		<div>
+<%for(var i=0;i< specialist.length;i++){%>
+	<!-- <span><%=specialist[i].realName%></span> -->
+	<ul class="all_ul" data-userId=<%=specialist[i].userId%>>
+			<li>
+				<ul>
+					<li class="left">
+						<img alt="" src=<%=specialist[i].userHead%>>
+					</li>
+					<li class="center">
+						<ul>
+							<li class="top">
+								<div class="top_left">
+									<span class="title"><%=specialist[i].realName%></span>
+									<!-- <span class="subtitle">高级代办专家</span> -->
+									<%if (specialist[i].LEVEL==3){%>
+										<span class="subtitle">高级代办专家</span>
+									<%}%>
+									<%if (specialist[i].LEVEL==2){%>
+										<span class="subtitle">中级代办专家</span>
+									<%}%>
+									<%if (specialist[i].LEVEL==1){%>
+										<span class="subtitle">初级代办专家</span>
+									<%}%>
+
+								</div>
+								<div class="top_right">
+									<div class="btn">选他代办</div>
+								</div>
+							</li>
+							<li class="bottom">
+								<%if (specialist[i].personal){%>
+								<a><%=specialist[i].personal[0]%></a>
+								<a><%=specialist[i].good[0]%></a>
+								<a><%=specialist[i].area[0]%></a>
+								<%}%>
+							</li>
+						</ul>
+					</li>
+					<li class="right">
+							<div class="all_c">
+										<canvas class="export" style="width:79px;height:79px" ></canvas>
+							</div>  
+
+					</li>
+				</ul>
+			</li>
+		</ul>
+<%}%>
+			</div>
+	</script>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/circle.js"></script>
+<script type="text/javascript" src="js/expertList.js"></script>
+<script src="js/template.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+	*{
+		margin: 0;
+		padding: 0;
+		font-family:"Arial", "微软雅黑";
+	}
+		/*屏幕适应 start*/
+	@media screen and (min-width: 1000px) {
+		.all{width: 400px;}
+		.bottom{width:400px;}
+		.call{width: 300px;}
+		.sel{width: 400px;}
+	}
+	@media (min-width: 300px) and (max-width: 1000px) {
+		.all{width: 100%;}
+		.bottom{width:100%;}
+		.call{width: 85%;}
+		.sel{width: 100%;}
+	}
+	body{
+		text-align: center;
+		overflow-x: hidden;
+	}
+	.all{
+		display: inline-block;
+		overflow: hidden;
+	}
+	.top{
+		width: 100%;
+		height: 50px;
+		background-color: #e6e5e3;
+	}
+	.top ul{
+		list-style: none;
+		height: auto;
+		text-align: center;
+		color:#727171;
+		background:#e6e5e3;
+	}
+	.top ul li{
+		width: 23%;
+		height: 100%;
+		display: inline-block;
+	}
+	.top ul li .dow_no{
+		border: 0;
+	}
+/* 	.top ul li span{
+		display: inline-block;
+		width: 60%;
+	}
+	.top ul li .dow{
+		height: 18px;
+		width: 30%;
+		vertical-align: middle;
+		position: relative;
+		border-right: 1.5px #727171 solid;
+	}
+	.top ul li .dow_no{
+		border: 0;
+	}
+	.top ul li .dow span{
+	    width:0;
+	    height:0;
+	    border-width:6px 6px 0;
+	    border-style:solid;
+	    border-color:#727171 transparent transparent;
+	    position: absolute;
+	    margin:auto;
+	    left:0;
+	    top:0;
+	    bottom:0;
+	} */
+	.select_ul li{
+		background-color: #ffffff;
+	}
+	.content{
+		width: 100%;
+		height:auto;
+		text-align: center;
+	}
+	.content .content_content{
+		width: 90%;
+		display: inline-block;
+	}
+		/*下拉*/
+	option{
+	
+		position: absolute;
+	}
+	.select_ul{
+	
+		background-color: #ffffff;
+	}
+	.select{z-index: 9999;position:relative;height:25px;cursor:pointer;margin-top:12px;border-right: 1.5px #727171 solid;}
+      .select:after{margin-right:3px;content:"";position:absolute;top:50%;right:10px;margin-top:-2px;border-top:5px solid #a5a5a5;border-right:5px solid transparent;border-left:5px solid transparent;}
+      .select .select_text{padding:0 20px 0 10px;height:25px;line-height:25px;}
+      .select_ul{list-style:none;display:none;position:absolute;top:34px;left:-1px;border-bottom:1px solid #D4D4D4;border-left:1px solid #D4D4D4;border-right:1px solid #D4D4D4;border-bottom-right-radius:3px;border-bottom-left-radius:3px;background:#fff;z-index: 9999;width: 100%;}
+      .select_ul li{line-height:36px;text-indent:10px;color:#727171;background:#e6e5e3;}
+     /*  .select_ul li:hover{color:#fff;background:#6AA7EA;}
+      .select_ul li.cur{color:#fff;background:#195DA3;} */
+      .top .select li{width: 100%;margin-top: 0px;line-height: 25px;}
+    /*下拉效果 start----------*/
+    .sel{
+		height: auto;
+		position: absolute;
+		z-index: 99999;
+		background-color: #efefef;
+		margin: auto;
+		left:0;right:0;
+		top: 50px;
+	}
+	.sel .adress_one{
+		width: 100%;
+		height: 100%;
+		list-style: none;
+	}
+	.sel .adress_one .left{
+		width: 27%;
+		height: 300;
+		float: left;
+		background-color: #e6e5e3;
+	}
+	.sel .adress_one .center{
+		width: 35%;
+		height: 100%;
+		float: left;
+		background-color: #dddddd;
+	}
+	.sel .adress_one .right{
+		width: 35%;
+		height: 100%;
+		float: left;
+		background-color: #efefef;
+	}
+	.sel .adress_one li ul{
+		width: 100%;
+		height: auto;
+		list-style: none;
+	}
+	.sel .adress_one li ul li{
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		color:#727171;
+	}
+	.sel .adress_one .left .cho{
+		background-color: #dddddd;
+	}
+	.sel .adress_one .center .cho{
+		background-color: #efefef;
+	}
+	.adress,.money,.roomType,.moreThan{
+		display: none;
+	}
+	.money{
+		background-color: #e6e5e3;
+	}
+	.money .adress_one .left{
+		width: 27%;
+		height: 100%;
+		float: left;
+		background-color: #e6e5e3;
+	}
+	.money .adress_one .center{
+		width: 73%;
+		height: 100%;
+		float: left;
+		background-color: #dddddd;
+		
+	}
+	.roomType{
+		background-color: #e6e5e3;
+	}
+	.roomType .adress_one .left{
+		width: 27%;
+		height: 100%;
+		float: left;
+		background-color: #e6e5e3;
+	}
+	.roomType .adress_one .center{
+		width: 73%;
+		height: 100%;
+		float: left;
+		background-color: #dddddd;
+		
+	}
+	.moreThan{
+		background-color: #e6e5e3;
+	}
+	.moreThan .adress_one .left{
+		width: 27%;
+		height: 100%;
+		float: left;
+		background-color: #e6e5e3;
+	}
+	.moreThan .adress_one .center{
+		width: 73%;
+		height: 100%;
+		float: left;
+		background-color: #dddddd;
+		
+	}

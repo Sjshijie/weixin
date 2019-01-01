@@ -1,0 +1,273 @@
+@media screen and (min-width: 1000px) {
+		.content .content_top{height: 60px;line-height:60px;}
+		.content .content_money{height: 80px;line-height:80px;}
+		.content>ul>li{height:40px;line-height:40px; }
+		.content .show{height: 80px;line-height:80px;}
+		.content .btn{height: 50px;line-height:50px;}
+		.call{width: 300px;}
+		.show_success span{right: 20%;}
+	}
+	@media (min-width: 350px) and (max-width: 1000px) {
+		.content .content_top{height: calc(100vw / 6.4);line-height:calc(100vw / 6.4); }
+		.content .content_money{height: calc(100vw / 5);line-height:calc(100vw / 5);}
+		.content>ul>li{height:calc(100vw / 10.7);line-height:calc(100vw / 10.7); }
+		.content .show{height: calc(100vw / 5);line-height:calc(100vw / 5);}
+		.content .btn{height: calc(100vw / 8);line-height:calc(100vw / 8);}
+		.call {width: 85%;}
+		.show_success span{right: 20%;}
+	}
+	@media (min-width: 300px) and (max-width: 350px) {
+		.content .content_top{height: calc(100vw / 6.4);line-height:calc(100vw / 6.4); }
+		.content .content_money{height: calc(100vw / 5);line-height:calc(100vw / 5);}
+		.content>ul>li{height:calc(100vw / 10.7);line-height:calc(100vw / 10.7); }
+		.content .show{height: calc(100vw / 5);line-height:calc(100vw / 5);}
+		.content .btn{height: calc(100vw / 8);line-height:calc(100vw / 8);}
+		.call {width: 85%;}
+		.show_success span{right: 15%;}
+		
+	}
+	.content .content_top{
+		display: inline-block;
+		width: 90%;
+		color:#333333;
+		font-weight: bold;
+	}
+	.content .content_top .left{
+		float: left;
+	}
+	.content .content_top .right{
+		float: right;
+	}
+	.content .content_money{
+		display: inline-block;
+		width: 90%;
+		border-radius:10px;
+		-moz-box-shadow:0px 0px 5px #e8e8e8; 
+		-webkit-box-shadow:0px 0px 5px #e8e8e8;
+		 box-shadow:0px 0px 5px #e8e8e8;
+		 background: url("../img/icon18.png") no-repeat left;
+		 background-size:auto 100%;
+		 text-align: center;
+		 font-size: 1.8em;
+		 color:#efb033;
+		 font-weight: bold;
+	}
+	.content>ul{
+		width: 90%;
+		display: inline-block;
+		list-style: none;
+		height: auto;
+		text-align: center;
+		margin-top: 10px;
+	}
+	.content>ul>li{
+		width: 28%;
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: 10px;
+		border-radius:5px;
+	}
+	.content>ul>.left{
+		margin-left: 0;
+	}
+	.content>ul>.li_1{
+		background-color: #c5daff;
+		color:#3a64ae;
+	}
+	.content>ul>.li_2{
+		background-color: #fff2c5;
+		color:#efb033;
+	}
+	.content .title{
+		width: 90%;
+		height: 60px;
+		display: inline-block;
+		line-height: 60px;
+		vertical-align: middle;
+		margin-top: 10px;
+	}
+	.content .title span{
+		display: inline-block;
+		vertical-align: middle;
+		color:#333333;
+		font-weight: bold;
+	}
+	.content .title hr{
+		display: inline-block;
+		width: 32%;
+		vertical-align: middle;
+		font-style:normal;
+		border:0;
+		border-bottom:1px #d3d1d1 solid;
+	}
+	.content .show .img_left{
+		    border-radius:50%;
+		position: absolute;
+		height: 95%;
+		width:20%;
+		margin: auto;
+		top:0;
+		bottom:0;
+		left:3px;
+		background: url("../img/icon20.png") no-repeat;
+		background-size:auto 95%;
+	    background-position: 0px 2px;
+	    overflow: hidden;
+		
+	}
+	.content .show .img_right{
+	 border-radius:50%;
+	 background-color: transparent;
+		position: absolute;
+		height: 95%;
+		margin: auto;
+		top:0;
+		bottom:0;
+		right:3px;
+		width:20%;
+		background: url("../img/icon19.png") no-repeat;
+		background-size:auto 95%;
+		background-position: 0px 2px;
+		 overflow: hidden;
+	}
+		.content .show{
+		width: 90%;
+		border:1.5px #efb033 solid;
+		display: inline-block;
+		border-radius:50px;
+		position: relative;
+		text-align: center;
+		overflow: hidden;
+	}
+	.content .show span{
+		display: inline-block;
+		font-size: 1.8em;
+		color:#efb033;
+		font-weight: bold;
+	}
+	.content>p{
+		color:#333333;
+		display: inline-block;
+		text-align: right;
+		width: 90%;
+		margin-right: 15%;
+		line-height: 30px;
+		font-size: 0.8em;
+	}
+	.content .btn{
+	   border-radius:8px;
+		width: 90%;
+		display: inline-block;
+		color:#333333;
+		font-weight: bold;
+		margin-top: 60px;
+		background: -webkit-linear-gradient(left,#eb6b90 ,#f1c728,#1cb1b3,#3e64ae);
+		position:relative;
+		margin-bottom: 20px;
+	}
+	.content .btn span{
+		display: inline-block;
+		width: 98.5%;
+		height: 90%;
+		position:absolute;
+		margin: auto;
+		top:0;
+		bottom:0;
+		left:0;
+		right: 0;
+		background-color: #ffffff;
+		 border-radius:8px;
+	}
+		/*遮罩层 start*/
+	.shile{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background-color: rgba(0,0,0,.7);
+		display: none;
+	}
+	/*遮罩层 end*/
+	/*猜价提醒 start*/
+	.call{
+		height:70%;
+		position: fixed;
+		z-index: 999999;
+		margin:auto;
+		top:10%;
+		right:0;
+		left:0;
+		background: -webkit-linear-gradient(top, #ef6a8f,#f17d8a,#f1c728,#cfc36b,#1cb1b3,#3e64ae);
+		display: none;
+	}
+	.call_pay{
+		background: transparent;
+		background: url("../img/icon12.png") no-repeat;
+		background-size:99% 99%;
+	}
+	.call_pay .center{
+		width: 40%;
+		position: absolute;
+		margin: auto;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+	}
+	.call_pay .center_title{
+		width: 40%;
+		position: absolute;
+		margin: auto;
+		bottom:23%;
+		left:0;
+		right:0;
+	}
+	.call_pay .center_btn{
+		width: 40%;
+		height: 40px;
+		line-height: 40px;
+		position: absolute;
+		margin: auto;
+		bottom:5%;
+		left:0;
+		right:0;
+		background: -webkit-linear-gradient(left, #ef6a8f,#cfc36b,#1cb1b3,#3e64ae);
+		text-align: center;
+		color:#ffffff;
+		border-radius:5px;
+	}
+	.call_pay .call_pay-no{
+		position: absolute;
+		margin: auto;
+		width: 30px;
+		height:30px;
+		right:0;
+	}
+	/*猜价提醒 end*/
+	/*猜价成功提示 start*/
+	.show_success{
+		width: 100%;
+		position: fixed;
+		z-index: 9999;
+		height: 80px;
+		background-color: #fcf8ea;
+		border-top:1px #f5c71e solid;
+		bottom:0;
+		display: none;
+	}
+	.show_success img{
+		position: absolute;
+		height: 125%;
+		margin: auto;
+		left:20px;
+		top:-25%;
+		
+	}
+	.show_success span{
+		line-height: 80px;
+		position: absolute;
+		margin: auto;
+		color:#333333;
+		
+	}
+	/* 猜价成功提示 end*/

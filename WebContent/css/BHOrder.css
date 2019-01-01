@@ -1,0 +1,113 @@
+/* CSS Document */
+@charset "utf-8";
+
+.waptable .BHOrder{width:100%; float:left; padding-bottom:5%; background-color:#f6f6f6;}
+.waptable .BHOrder1{padding-bottom:0;}
+.waptable .BHOrder2{margin-top:5%;}
+.waptable .BHOrder dd{background-color:#ffffff; width:100%; float:left;}
+.waptable .BHOrder .linestyle{border-bottom:1px solid #c1c1c1; width:84%; margin:0 8%; float:left;}
+
+.waptable .BHOrder .module1{width:90%; padding:4% 5%; float:left;}
+.waptable .BHOrder .module1 i{width:32%; max-height:138px; overflow:hidden; text-align:center; float:left; margin-right:2%;}
+.waptable .BHOrder .module1 i img{width:100%; height:auto; border-radius:8px;}
+.waptable .BHOrder .module1 h3{font-size:1.5em; margin-bottom:0.5%; font-weight:bold;}
+.waptable .BHOrder .module1 p{font-size:1.375em; color:#777777; margin-bottom:0.5%;}
+.waptable .BHOrder .module1 p span{font-size:0.875em; float:right; background-color:#eb718f; color:#ffffff; padding:2px 4px; margin-top:-2px; text-align:center;}
+
+.waptable .BHOrder .module2{width:100%; margin-bottom:4%; float:left;}
+.waptable .BHOrder .module2a{margin-top:1%;}
+.waptable .BHOrder .module2 li{float:left; width:33.1%; border-right:1px solid #c1c1c1; text-align:center;}
+.waptable .BHOrder .module2 li.listyle{border-right:none;}
+.waptable .BHOrder .module2 li b{color:#eb718d; font-size:1.75em; width:100%; float:left;}
+.waptable .BHOrder .module2 li span{font-size:1.375em; width:100%; float:left; margin-top:1%;}
+.waptable .BHOrder .module2 li .M2aIcon1{background:url(../img/houseorder_icon01.png) no-repeat 50%; width:100%; height:45px; background-size:auto 90%; float:left;}
+.waptable .BHOrder .module2 li .M2aIcon2{background:url(../img/houseorder_icon03.png) no-repeat 50%; width:100%; height:45px; background-size:auto 90%; float:left;}
+.waptable .BHOrder .module2 li .M2aIcon3{background:url(../img/houseorder_icon02.png) no-repeat 50%; width:100%; height:45px; background-size:auto 90%; float:left;}
+
+.waptable .BHOrder .module3{width:90%; padding:4% 5%; float:left;}
+.waptable .BHOrder .module3 div{width:100%; float:left; margin-bottom:3%; font-size:1.5em; line-height:35px;}
+.waptable .BHOrder .module3 .module3top b{width:53%; float:left; color:#eb718f; font-size:1.3em; font-family:Arial;}
+.waptable .BHOrder .module3 .module3top .M3Icon1{background:url(../img/houseorder_icon04.png) no-repeat 50%; width:30px; height:35px; background-size:auto 90%; float:left; margin-right:7px;}
+.waptable .BHOrder .module3 .module3top span{float:right; color:#777777;}
+.waptable .BHOrder .module3 .module3mid .M3Icon2{background:url(../img/houseorder_icon05.png) no-repeat 50%; width:30px; height:35px; background-size:auto 90%; float:left; margin-right:7px;}
+.waptable .BHOrder .module3 .module3bottom{margin-bottom:1%;}
+.waptable .BHOrder .module3 .module3bottom .M3time{width:73%; height:35px; float:left; text-align:center; font-size:0.688em; position:relative; margin-bottom:0;}
+.waptable .BHOrder .module3 .module3bottom .M3time .M3Tmargin{position:absolute; z-index:10; left:0; right:0; top:0; bottom:0; margin:auto; width:170px; line-height:35px; float:left;}
+.waptable .BHOrder .module3 .module3bottom .M3time .M3Icon3{background:url(../img/houseorder_icon07.png) no-repeat 50%; width:35px; height:35px; background-size:auto 90%; float:left; font-style:normal; color:#ffffff;}
+.waptable .BHOrder .module3 .module3bottom .M3time .M3Icon3a{background:url(../img/houseorder_icon07a.png) no-repeat 50%; width:35px; height:35px; background-size:auto 90%; float:left; font-style:normal; color:#ffffff;}
+.waptable .BHOrder .module3 .module3bottom .M3time span{float:left; margin:0 0.5%;}
+.waptable .BHOrder .module3 .module3bottom em{float:right; font-style:normal; background:url(../img/houseorder_but01.png) no-repeat 100% 50%; height:35px; background-size:auto 90%; font-size:0.75em; text-align:right; padding:0 2.6%;}
+.waptable .BHOrder .module3 .module3bottom em.iconem{background:url(../img/houseorder_but01a.png) no-repeat 100% 50%; background-size:auto 90%; color:#b7b7b7;}
+.waptable .BHOrder .module3 .module3footer{width:100%; position:relative; float:left; margin:5% 0;}
+.waptable .BHOrder .module3 .module3footer i{font-style:normal; background:url(../img/houseorder_but01.png) no-repeat 50% 50%; height:35px; background-size:auto 90%; font-size:0.75em; text-align:center; padding:0 2.6%; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; }
+
+.waptable .BHOrder .module4{width:90%; padding:4% 5%; float:left;}
+.waptable .BHOrder .module4 b{font-size:1.5em; line-height:35px;}
+.waptable .BHOrder .module4 b i{background:url(../img/houseorder_icon06.png) no-repeat 50%; width:30px; height:35px; background-size:auto 100%; float:left; margin-right:7px;}
+.waptable .BHOrder .module4 em{background:url(../img/houseorder_icon08.png) no-repeat 9px 50%; width:30px; height:35px; background-size:auto 90%; float:right;}
+
+.waptable .BHOrder .module5{width:100%; float:left; padding-top:5%; background-color:#f6f6f6;}
+.waptable .BHOrder .module5 .module5style{width:90%; padding:4% 5%; float:left; background-color:#ffffff;}
+.waptable .BHOrder .module5 .M5Title{width:100%; line-height:37px; font-weight:bold; font-size:1.5em; margin-bottom:4%;}
+.waptable .BHOrder .module5 .M5Title i{background:url(../img/houseorder_icon06.png) no-repeat 50%; width:30px; height:35px; background-size:auto 100%; float:left; margin-right:7px;}
+.waptable .BHOrder .module5 .M5Title span{float:right; font-weight:normal; background:url(../img/houseorder_icon09.png) no-repeat 50%; width:124px; height:35px; background-size:auto 90%;}
+.waptable .BHOrder .module5 .M5Title span a{width:48.1%; float:left; text-align:center; font-size:0.938em;}
+.waptable .BHOrder .module5 .M5Title span a.astyle{color:#ffffff;}
+
+.waptable .BHOrder .module5 .M5Content{width:100%;}
+.waptable .BHOrder .module5 .M5Content .M5Icon{width:5%; float:left;}
+.waptable .BHOrder .module5 .M5Content .M5Icon li{width:100%; float:left;}
+.waptable .BHOrder .module5 .M5Content .M5Icon li.M5li{margin-top:53px;}
+.waptable .BHOrder .module5 .M5Content .M5Icon li em{width:50%; float:left; border-left:1px dashed #c9c9c9; margin-left:50%;}
+.waptable .BHOrder .module5 .M5Content .M5Icon li em.emstyle{border-left:1px dashed #eb718f;}
+.waptable .BHOrder .module5 .M5Content .M5Icon li i{width:20px; height:20px; float:left; background:url(../img/houseorder_icon14.png) no-repeat 0 50%; background-size:auto 100%; float:left; margin-bottom:10px;}
+.waptable .BHOrder .module5 .M5Content .M5Icon li i.icon1{background:url(../img/houseorder_icon12.png) no-repeat 0 50%; background-size:auto 100%;}
+
+.waptable .BHOrder .module5 .M5Content .M5Info{float:right; width:90%;}
+.waptable .BHOrder .module5 .M5Content .M5Info li{float:left; width:92%; padding:4%; margin-bottom:20px; background-color:#f3f3f3; position:relative;}
+.waptable .BHOrder .module5 .M5Content .M5Info li.M5li{color:#b7b7b7;}
+.waptable .BHOrder .module5 .M5Content .M5Info li i{position:absolute; z-index:20; right:0; bottom:0; margin:0 4% 4% 0; background:url(../img/houseorder_icon10.png) no-repeat; height:35px; background-size:auto 90%; font-style:normal; padding:0 8%; line-height:32px; font-size:1.5em;}
+.waptable .BHOrder .module5 .M5Content .M5Info li.M5li i{background:url(../img/houseorder_icon10a.png) no-repeat; background-size:auto 90%;}
+.waptable .BHOrder .module5 .M5Content .M5Info li .fail{position:absolute; z-index:30; left:38%; top:7%; background:url(../img/houseorder_icon11.png) no-repeat; padding:0 10%; height:40px; background-size:auto 100%;}
+.waptable .BHOrder .module5 .M5Content .M5Info li span{width:100%; font-size:1.375em; float:left; margin-bottom:1.5%;line-height:2em}
+.waptable .BHOrder .module5 .M5Content .M5Info li span h3{float:left;}
+.waptable .BHOrder .module5 .M5Content .M5Info li span em{font-style:normal; float:right;}
+.waptable .BHOrder .module5 .M5Content .M5Info li span b{color:#eb718f; font-size:1.2em;}
+.waptable .BHOrder .module5 .M5Content .M5Info li.M5li span b{color:#b7b7b7;}
+.waptable .BHOrder .module5 .M5Content .M5Info li p{margin-bottom:1.5%; font-weight:bold; font-size:1.375em;line-height: 2em}
+
+.waptable .BHOrder .module6{width:100%; float:left; padding-top:5%; background-color:#f6f6f6;}
+.waptable .BHOrder .module6 .module6style{width:90%; padding:4% 5%; float:left; background-color:#ffffff;}
+.waptable .BHOrder .module6 .M6Title{width:100%; line-height:37px; font-weight:bold; font-size:1.5em; margin-bottom:4%;}
+.waptable .BHOrder .module6 .M6Title i{background:url(../img/houseorder_icon13.png) no-repeat 50%; width:30px; height:35px; background-size:auto 100%; float:left; margin-right:7px;}
+.waptable .BHOrder .module6 .M6Content{background-color:#f3f3f3; width:92%; padding:4%; float:left; position:relative;}
+.waptable .BHOrder .module6 .M6Content i{position:absolute; z-index:20; right:0; bottom:0; margin:0 4% 4% 0; background:url(../img/houseorder_icon10.png) no-repeat; height:35px; background-size:auto 90%; font-style:normal; padding:0 6.5%; line-height:32px; font-size:1.5em;}
+.waptable .BHOrder .module6 .M6Content span{width:100%; font-size:1.375em; float:left; margin-bottom:3%; font-size:1.375em;}
+.waptable .BHOrder .module6 .M6Content span h3{float:left;}
+.waptable .BHOrder .module6 .M6Content span em{font-style:normal; float:right;}
+.waptable .BHOrder .module6 .M6Content span b{color:#eb718f; font-size:1.375em;}
+
+
+
+html,body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+}
+
+.ifnone{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+.ifnone div{
+	
+	margin-bottom: 10px;
+}

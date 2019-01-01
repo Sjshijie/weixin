@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>英式-竞价</title>
+<link href='css/css.css' rel='stylesheet' type='text/css' />
+<link href='css/bidInface.css' rel='stylesheet' type='text/css' />
+<link href='css/bidInface-english.css' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/mobiscroll.custom.min.css" />
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
+<script src="js/echarts.js"></script>
+</head>
+<body>
+	<!-- 遮罩层 start -->
+	 <div class="shile"></div> 
+	<!-- 遮罩层 end -->
+	<!-- 付款提醒 start -->
+	<div class="call call_pay">
+		<div class="call_pay-no"></div>
+		<img class="center" alt="" src="img/icon13.png"/>
+		<img class="center_title" alt="" src="img/english1.png"/>
+		<div class="center_btn">我知道了！</div>
+	</div>
+	<!-- 付款提醒 end -->
+	<div class="waptable">
+		
+	</div>
+	<div class="bottom">
+		<img src="img/pray.gif" alt="" />
+		<span>竞价发送成功</span>
+	</div>
+	<script id="data" type="text/html">
+		<div class="wapstyle">
+			<div class="wapstyle_top">
+				<img src="img/english5.png" alt="" />
+				&nbsp;点击确认后此价格即可生效，卖家在竞价时间周期内以及竞价
+			</div>
+			<div class="module1">
+				<h3><%=data.data.sellHouseInfo.villageName%></h3>
+				<p><%=data.data.sellHouseInfo.villageName%>&nbsp;&nbsp;&nbsp;&nbsp;<%=data.data.sellHouseInfo.houseModel%>&nbsp;&nbsp;<%=data.data.sellHouseInfo.houseArea%>㎡&nbsp;&nbsp;<%=data.data.sellHouseInfo.orientation%></p>
+				<ul>
+					<li class="M1li1">零佣金</li>
+					<li class="M1li2">满五唯一</li>
+					<li class="M1li3">首付比例<%=data.data.sellHouseInfo.scale%>以上</li>
+					<li class="M1li4">过户受理当天结清首付</li>
+					<i></i>
+				</ul>
+			</div>
+			<div class="module2">
+				<ul>
+					<li>
+						<b><%=data.data.sellHouseInfo.listingPrice/10000%>万</b>
+						<span>保留价</span>
+					</li>
+					<li>
+						<b><%=data.data.sellHouseInfo.currentPrice/10000%>万</b>
+						<span>总价</span>
+					</li>
+					<li class="listyle">
+						<b>7.6809万</b>
+						<span>单价/平</span>
+					</li>
+					<li>
+						<b><%=data.data.sellHouseInfo.enrollNum%></b>
+						<span>报名人数</span>
+					</li>
+					<li>
+						<b><%=data.data.sellHouseInfo.remindNum%></b>
+						<span>设置提醒人数</span>
+					</li>
+					<li class="listyle">
+						<b><%=data.data.sellHouseInfo.lookerNum%></b>
+						<span>围观人数</span>
+					</li>
+				</ul>
+			</div>
+			<div class="module3">
+				<div class="M3Top">
+					<em>正在进行</em>
+					<span><%=data.data.sellHouseInfo.endDate%>&nbsp;&nbsp;&nbsp;<%=data.data.sellHouseInfo.endTime%>结束</span>
+				</div>
+				<i></i>
+			</div>
+			<div class="module4">
+				<p>当前价格：<%=data.data.sellHouseInfo.currentPrice/10000%>万&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				<b>
+					<img class="left_img" src="img/icon20.png" alt=""/>
+					<span class="cost"><%=data.data.sellHouseInfo.currentPrice/10000%></span><span>万</span>
+					<img class="right_img" src="img/icon19.png" alt=""/>
+				</b>
+			</div>
+			<div class="module5">
+				<ul>
+					<li>首付比例
+						<select class="rate">
+							<option>30%</option>
+							<option>35%</option>
+							<option>40%</option>
+							<option>45%</option>
+							<option>50%</option>
+							<option>55%</option>
+							<option>60%</option>
+							<option>65%</option>
+							<option>70%</option>
+							<option>75%</option>
+							<option>80%</option>
+							<option>85%</option>
+							<option>90%</option>
+							<option>95%</option>
+							<option>全款</option>
+						</select>
+					</li>
+					<li>到账时间
+						<select class="downDate">
+							<option>买卖合同签约后7天内</option>
+							<option>买卖合同签约后当天</option>
+						</select>
+					</li>
+					<li>首付金额
+						<div class="num"></div>
+					</li>
+
+					<li>尾款到帐
+						<select class="finalDate">
+							<option>交房当日</option>
+							<option>交房后3天内</option>
+						</select>
+					</li>
+					<li class="last_li">竞价有效期&nbsp;
+						
+					      <input type="text" id="demo_datetime" class="mbsc-comp" readonly="">
+					</li>
+				</ul>
+			</div>
+			<div class="module6">
+				<!-- <input type="checkbox" name="OrderBox" /> -->
+				<a class="module6_a"></a>
+				<span>本人已阅读<a href="#">《竞拍协议书》</a>、<a href="#">《拍卖规则说明》</a>、<a href="#">《拍卖流程说明》</a>、<a href="#">《平台免责声明》</a>,并已完全理解和接受上述文件的全部内容。</span>
+			</div>
+			<div class="module7">
+				<a class="english">立 即<br />出 价</a>
+				<div class="module7_1">
+					<img class="img_left" src="img/BidInterface_icon08.png" alt="" />
+					<span>竞价记录</span>
+					<img class="img_right" src="img/BidInterface_icon09.png" alt="" />
+				</div>
+			</div>
+			<!-- 散点图 start -->
+			<div class="scatter" id="scatter"></div>
+			<!-- 散点图 end -->
+			<div class="module8">
+				<ul>
+					<li>
+						<i class="icon01"></i>
+						<span>一键咨询</span>
+					</li>
+					<li>
+						<i class="icon02"></i>
+						<span>一键代办</span>
+					</li>
+					<li class="listyle">
+						<i class="icon03"></i>
+						<span>一键代办</span>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+
+
+	</script>
+	<script src="js/mobiscroll.custom.min.js"></script>
+	<script type="text/javascript" src="js/bidInterFace-english.js"></script>
+	<script type="text/javascript" src="js/bidInterFace.js"></script>
+	<script src="js/template.js"></script>
+</body>
+</html>

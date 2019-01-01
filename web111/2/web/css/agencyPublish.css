@@ -1,0 +1,178 @@
+	.all{
+		height: 100%;
+		background: -webkit-linear-gradient(top, #eb6b90 ,#f1c728,#1cb1b3,#3e64ae);
+		text-align: center;
+	}
+	.all_top{
+		width: 100%;
+		height: 15%;
+		background: url("../images/y_icon1.png") no-repeat center;
+		background-size:auto 75%;
+	}
+	.all_content{
+		width: 90%;
+		height: auto;
+		display: inline-block;
+		background-color: #ffffff;
+		border-radius:8px
+	}
+	.all_content ul{
+		list-style: none;
+		width: 100%;
+		height: auto;
+	}
+	.all_content ul li{
+		width: 100%;
+		height: 35px;
+		margin-top: 15px;
+	}
+	.all_content ul li hr{
+		width: 78%;
+		display: inline-block;
+		font-style: normal;
+		border:0;
+		border-bottom: 1px #d3d1d1 solid;
+	}
+	.all_content ul .title{
+		position: relative;
+	}
+	.all_content ul li a{
+		display: inline-block;
+		height: 35px;
+		background-color: #ffffff;
+		position: absolute;
+		margin: auto;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		width: 100px;
+		line-height: 35px;
+		color:#595a5a;
+	}
+	.all_content ul li span{
+		display: inline-block;
+		line-height: 35px;
+		float: left;
+		padding-left: 10%;
+		font-size:1.1em;
+		color:#595a5a;
+	}
+	.selectwrap{
+	    width:60%;
+	    line-height: 35px;
+	    color: #333;
+	    float: right;
+	    height: 100%;
+	    margin-right: 10%;
+	}
+	.adress .selectwrap{
+		 width:28.5%;
+	}
+	.adress .selectwrap1{
+		 float: right;
+		 margin-right: 2%;
+	}
+    .selectwrap select{
+    	color:#666666;
+        width:95%;
+        height: 100%;
+        line-height: 28px;
+        border-style: none;
+        outline: none;
+        font-family: "微软雅黑";
+        font-size: 15px;
+        font-weight: normal;
+        box-sizing: border-box;
+
+        /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+        border: solid 1px #b5b5b5;
+        /*很关键：将默认的select选择框样式清除*/
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        /*在选择框的最右侧中间显示小箭头图片*/
+        background: url(../images/arrow.png) no-repeat scroll right transparent;
+        background-size:auto 25%;
+        background-position:0 0 10px 0;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        padding-right: 18px;
+        outline: none;
+		padding-left: 10px;
+		border-radius:5px;
+      }
+      .all_content ul li .btn{
+      	width: 35%;
+      	height: 35px;
+      	line-height: 35px;
+      	background: url("../images/color_btn.png") no-repeat;
+      	background-size:100% 100%;
+   		cursor: pointer;
+   		color:#333333;
+   		margin-bottom: 15px;
+      }
+		.all_content ul li .left{
+			float: left;
+			margin-left: 10%;
+		}
+		.all_content ul li .right{
+			float: right;
+			margin-right: 10%;
+		}
+		/*指定代办专家 start*/
+			.expert_type{
+				line-height: 35px;
+				color:#8c8c8c;
+			}
+			.remark{
+				position: relative;
+			}
+			.remark_content{
+				width: 90%;position: absolute;
+				margin: auto;bottom:-15px;
+				text-align: right;color:#e992a6;
+				font-size: 0.6em;
+				line-height: 15px;
+			}
+			.all_content ul li .btnall{
+				background: url("../images/btnall.png");
+				background-size:100% 100%;
+				width: 80%;
+				float: left;
+				margin-left: 10%;
+			}
+		/*指定代办专家 end*/
+		/*指定咨询专家 start*/
+			.cho_div{
+		float: right;
+		font-size: 0.6em;
+		margin-right: 11%;
+		height: 30px;
+		line-height: 30px;
+		padding-left: 5px;
+		padding-right: 5px;
+		border-radius:10px;
+		background-color: #eeeeee;
+		color:#9c9c9c;
+	}
+	.one-cho{
+		margin-right: 3%;
+		background-color: #fce5c0;
+		color:#f0c079;
+	}
+	.all_content ul .text{
+		height: auto;
+		float: left;
+	}
+	.all_content ul .text textarea{
+		height: 80px;
+		width: 60%;
+		border:1px #b5b5b5 solid;
+		border-radius:5px;
+		outline: none;
+	}
+	.all_content ul .btnall1{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+		/*指定咨询专家 end*/

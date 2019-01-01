@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no" >  
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>任性找房</title>
+<link rel="stylesheet" href="css/nouislider.css">
+<link rel="stylesheet" href="css/mpicker.css">
+<link  type="text/css" rel="stylesheet" href="css/query.css"/>
+
+</head>
+<body>
+	<div class="all">
+		<!-- 内容 start -->
+		<div class="content">
+			<div class="content_content">
+				<div class="content_content_one">
+					<span class="title">区域</span>
+					<input type="text" class="select select_one select-value form-contorl">
+			        <span class="title">地铁</span>
+					<input type="text" class="select select-value1 form-contorl">
+				</div>
+				<div class="content_content_two">
+					租房类型
+				</div>
+				<div class="content_content_two rentType">
+					<ul>
+						<li class="cho_li">合租</li>
+						<li>整租</li>
+					</ul>
+				</div>
+				<div class="content_content_two">
+					租金区域
+				</div>
+				<div class="content_content_two range">
+					<div id="drag" style=""></div>
+					<input type="text" id="text1" style="display: none;">
+					<input type="text" id="text2" style="display: none;"> 
+					<ul>
+						<li>0</li>
+						<li>1500</li>
+						<li>3000</li>
+						<li>4500</li>
+						<li class="range_right">7500</li>
+						<li class="range_right">不限</li>
+					</ul>
+				</div>
+				<div class="content_content_two">
+					房屋户型
+				</div>
+				<div class="content_content_two more houseModel">
+					<ul>
+						<li class="cho_li">一室</li>
+						<li>二室</li>
+						<li>三室</li>
+						<li>四室</li>
+						<li class="more_li">五室以上</li>
+						<li class="more_li">不限</li>
+					</ul>
+				</div>
+				<!-- <div class="content_content_two">
+					<ul>
+						<li>五室以上</li>
+						<li>不限</li>
+					</ul>
+				</div> -->
+				<div class="content_content_two">
+					装修类型
+				</div>
+				<div class="content_content_two houseDec">
+					<ul>
+						<li class="cho_li">精装修</li>
+						<li>简装</li>
+						<li>毛坯</li>
+					</ul>
+				</div>
+				<div class="content_content_two">
+					房源类型
+				</div>
+				<div class="content_content_two houseType">
+					<ul>
+						<li class="cho_li">小区</li>
+						<li>品牌公寓</li>
+						<li>别墅</li>
+					</ul>
+				</div>
+				<div class="content_content_two">
+					楼层
+				</div>
+				<div class="content_content_two houseFloor">
+					<ul>
+						<li class="cho_li">底层</li>
+						<li>中层</li>
+						<li>高层</li>
+					</ul>
+				</div>
+				<div class="content_content_two">
+					面积
+				</div>
+				<div class="content_content_two range range_">
+					<div id="drag1" style=""></div>
+						<input type="text" id="text3" style="display: none;">
+						<input type="text" id="text4" style="display: none;"> 
+						<ul>
+					    <li class="range_five">0</li>
+						<li>50</li>
+						<li class="range_four">80</li>
+						<li>120</li>
+						<li class="range_six">180</li>
+						<li class="range_right">不限</li>
+					</ul>
+				</div>
+				<div class="content_content_two">
+					付款方式
+				</div>
+				<div class="content_content_two more payType">
+					<ul>
+						<li class="cho_li">押一付一</li>
+						<li>押二付一</li>
+						<li>押一付三</li>
+						<li>半年付</li>
+						<li class="more_li">一年付</li>
+					</ul>
+				</div>
+				<!-- <div class="content_content_two">
+					<ul>
+						<li>一年付</li>
+					</ul>
+				</div> -->
+				<div class="content_content_two">
+					房源配置
+				</div>
+				<div class="content_content_two more more1 allocation">
+					<ul>
+						<li class="cho_li">床</li>
+						<li>衣柜</li>
+						<li>沙发</li>
+						<li>洗衣机</li>
+						<li class="more_li">冰箱</li>
+						<li class="cho_li more_li">热水器</li>
+						<li class="more_li">电视</li>
+						<li class="more_li">宽带</li>
+						<li class="more_li">空调</li>
+					</ul>
+				</div>
+				<!-- 底部按钮 start -->	
+				<div class="btn">
+					<div>立即找房</div>
+				</div>
+				<!-- 底部按钮 end -->
+				<div class="mPick hide">
+					<div class="mPicker-mask hide"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/tokeUserId.js"></script>
+	<script src="js/nouislider.js"></script>
+	<script src="js/json.js"></script>
+	<script src="js/mPicker.min.js"></script>
+	<script src="js/query.js"></script>
+
+</body>
+</html>

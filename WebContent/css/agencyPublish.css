@@ -1,0 +1,495 @@
+﻿	@media screen and (min-width: 1000px) {
+		.all_content ul li{height: 35px;}
+		.all_content1 ul li{height: 40px;}
+		.selectwrap select,.selectwrap input{height: 28px;line-height: 28px;}
+		.remark_content{bottom:-15px;}
+	}
+	@media (min-width: 400px) and (max-width: 700px) {
+		.all_content ul li{height: 39px;}
+		.all_content1 ul li{height: 50px;}
+		.selectwrap select,.selectwrap input{height: 35px;line-height: 35px;}
+		.remark_content{bottom:-10px;}
+	}
+	@media (min-width: 200px) and (max-width: 350px) {
+		.all_content ul li{height: 30px;}
+		.all_content1 ul li{height: 35px;}
+		.selectwrap select,.selectwrap input{height: 25px;line-height: 25px;}
+		.remark_content{bottom:-16px;}
+	}
+	@media (min-width: 350px) and (max-width: 400px) {
+		.all_content ul li{height: 40px;}
+		.all_content1 ul li{height: 45px;}
+		.selectwrap select,.selectwrap input{height: 32px;line-height: 32px;}
+		.remark_content{bottom:-12px;}
+	}
+	.all{
+		height: 120%;
+		background: -webkit-linear-gradient(top, #eb6b90 ,#f1c728,#1cb1b3,#3e64ae);
+		text-align: center;
+		position: relative
+	}
+	.all1{
+		height: 100%;
+		background: -webkit-linear-gradient(top, #eb6b90 ,#f1c728,#1cb1b3,#3e64ae);
+		text-align: center;
+	}
+	.all_top{
+		width: 100%;
+		height: 20%;
+		background: url("../img/y_icon1.png") no-repeat center;
+		background-size:auto 75%;
+	}
+	.all_content{
+		width: 90%;
+		height: auto;
+		display: inline-block;
+		background-color: #ffffff;
+		border-radius:8px;
+		margin: 0 auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom:50px
+		
+	}
+.all_content1{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-top:20px;
+	}
+	.all_content ul{
+		list-style: none;
+		width: 100%;
+		height: auto;
+	}
+	.all_content ul li{
+		width: 100%;
+		margin-top: 15px;
+	}
+	.all_content ul li hr{
+		width: 78%;
+		display: inline-block;
+		font-style: normal;
+		border:0;
+		border-bottom: 1px #d3d1d1 solid;
+	}
+	.all_content ul .title{
+		position: relative;
+	}
+	.all_content ul li>a{
+		display: inline-block;
+		height: 35px;
+		background-color: #ffffff;
+		position: absolute;
+		margin: auto;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		width: 100px;
+		line-height: 35px;
+		color:#595a5a;
+	}
+	.all_content ul li span{
+		display: inline-block;
+		line-height: 35px;
+		float: left;
+		padding-left: 10%;
+		font-size:1.1em;
+		color:#595a5a;
+	}
+	.selectwrap{
+	    width:60%;
+	    line-height: 35px;
+	    color: #333;
+	    float: right;
+	    height: 100%;
+	    margin-right: 10%;
+	}
+	.adress .selectwrap{
+		 width:28.5%;
+	}
+	.adress .selectwrap1{
+		 float: right;
+		 margin-right: 2%;
+	}
+    .selectwrap select{
+    	color:#666666;
+        width:95%;
+        border-style: none;
+        outline: none;
+        font-family: "微软雅黑";
+        font-size: 15px;
+        font-weight: normal;
+        box-sizing: border-box;
+
+        /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+        border: solid 1px #b5b5b5;
+        /*很关键：将默认的select选择框样式清除*/
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        /*在选择框的最右侧中间显示小箭头图片*/
+        background: url(../img/arrow.png) no-repeat scroll right transparent;
+        background-size:auto 25%;
+        background-position:0 0 10px 0;
+        /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+        padding-right: 18px;
+        outline: none;
+		padding-right: 20px;
+		border-radius:5px;
+      }
+      .all_content ul li .btn{
+      	width: 35%;
+      	height: 35px;
+      	line-height: 35px;
+      	background: url("../img/color_btn.png") no-repeat;
+      	background-size:100% 100%;
+   		cursor: pointer;
+   		color:#333333;
+   		margin-bottom: 15px;
+      }
+		.all_content ul li .left{
+			float: left;
+			margin-left: 10%;
+		}
+		.all_content ul li .right{
+			float: right;
+			margin-right: 10%;
+		}
+		/*指定代办专家 start*/
+		.expert_type{
+			line-height: 35px;
+			color:#8c8c8c;
+		}
+		.remark{
+			position: relative;
+		}
+		.remark_content{
+			width: 90%;position: absolute;
+			margin: auto;
+			text-align: right;color:#e992a6;
+			font-size: 0.6em;
+			line-height: 15px;
+		}
+		.all_content ul li .btnall{
+			background: url("../img/btnall.png");
+			background-size:100% 100%;
+			width: 80%;
+			float: left;
+			margin-left: 10%;
+		}
+		/*指定代办专家 end*/
+		/*指定咨询专家 start*/
+	.cho_div{
+		width:25%;
+		float: left;
+		font-size: 0.6em;
+		height: 30px;
+		line-height: 30px;
+		padding-left: 4px;
+		padding-right: 4px;
+		border-radius:10px;
+		background-color: #eeeeee;
+		color:#9c9c9c;
+		margin-right: 3%;
+	}
+	.money{
+		margin-left: 32%
+	}
+	.one-cho{
+		background-color: #fce5c0;
+		color:#f0c079;
+	}
+	.all_content ul .text{
+		height: auto;
+		float: left;
+	}
+	.all_content ul .text textarea{
+		height: 80px;
+		width: 60%;
+		border:1px #b5b5b5 solid;
+		border-radius:5px;
+		outline: none;
+	}
+	.all_content ul .btnall1{
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	.business{
+		position: relative;
+	}
+	.business-content{
+		position: absolute;
+		right: 0;
+		color:#666666;
+        width:95%;
+        height: 80%;
+        line-height: 28px;
+        border-style: none;
+        outline: none;
+        font-family: "微软雅黑";
+        font-size: 15px;
+        font-weight: normal;
+        box-sizing: border-box;
+		text-align: right;
+        /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+        border: solid 1px #b5b5b5;
+        /*很关键：将默认的select选择框样式清除*/
+		border-radius:5px;
+		background: url(../img/arrow.png) no-repeat scroll right transparent;
+		background-size:auto 25%;
+		margin:0 auto;
+		padding-right: 20px;
+		overflow: hidden;
+	}
+
+	input{
+		color:#666666;
+        width:95%;
+        height: 100%;
+        line-height: 28px;
+        border-style: none;
+        outline: none;
+        font-family: "微软雅黑";
+        font-size: 15px;
+        font-weight: normal;
+        box-sizing: border-box;
+		text-align: left;
+        /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+        border: solid 1px #b5b5b5;
+        /*很关键：将默认的select选择框样式清除*/
+		border-radius:5px;
+		background: url(../img/arrow.png) no-repeat scroll right transparent;
+		background-size:auto 25%;
+		margin:0 auto;
+		padding-right: 20px;
+	}
+	.input{
+		background:none !important
+	}
+
+	input,.selectwrap{
+		text-align: right;
+		direction: rtl;
+	}
+		/*指定咨询专家 end*/	
+	
+
+	body{
+		position: relative;
+	}
+	.layer{
+		display: none;
+		position: absolute;
+		z-index:99;
+		top:0;
+		width: 100%;
+		height: 120%;
+		background: rgba(0,0,0,0.6)
+	}
+	.contain{
+		display: none;
+		position: fixed;
+		top:0;
+		left:0;
+		right: 0;
+		bottom: 0;
+		margin:auto;
+		height: 70%;
+		width: 80%;
+		background: white;
+		padding-top:10px;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-bottom: 5px;
+		border-radius: 10px;
+		z-index:1000;
+		overflow: hidden;
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);-webkit-user-select: none;-moz-user-focus: none;-moz-user-select: none;
+	}
+
+
+	 .ly-contain{
+		height: 75%;
+		width: 100%;
+		margin-left:15px;
+		margin-top:25px;
+		overflow-y:scroll;
+	} 
+	.ly-total{
+		width: 92%;
+		margin-top: 5px;
+	}
+
+	.ly-btn{
+		border:1px solid;
+		/*border-image: -webkit-linear-gradient(#eb6b90 ,#f1c728,#1cb1b3,#3e64ae);*/
+		border-image: -webkit-linear-gradient(left,#eb718f,#efb033 25%,#1cb1b1 50%,#3a64ae) 1 1;
+		border-image: -moz-linear-gradient(left,#eb718f,#efb033 25%,#1cb1b1 50%,#3a64ae) 1 1;
+		border-image: linear-gradient(left,#eb718f,#efb033 25%,#1cb1b1 50%,#3a64ae) 1 1;
+		border-radius:10%;
+		width:80%;
+		margin: 10px auto 0 auto; 
+		height:30px;
+		text-align: center;
+		line-height: 30px;
+	}
+
+	
+
+	.list{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		width: 72%
+	}
+	.list-top{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		font-size:15px;
+		position: relative;
+		line-height:40px
+	}
+
+	.list-top>.active{
+		display: none;
+		position: absolute;
+		right: -30px;
+		width: 10%
+	}
+
+	.list-top .active img{
+		width:100%
+	}
+	
+
+	.list-bottom{
+		font-size:11px;
+		color:#aeaeae
+	}
+
+
+	.call{
+		width: 80%;
+		height:70%;
+		position: fixed;
+		z-index: 999999;
+		margin:auto;
+		top:10%;
+		right:0;
+		left:0;
+		background: -webkit-linear-gradient(top, #ef6a8f,#f17d8a,#f1c728,#cfc36b,#1cb1b3,#3e64ae);
+		display: none;
+	}
+	.call .no{
+		position: absolute;
+		margin: auto;
+		top:15px;
+		left: 20px;
+		max-height: 40px;
+	}
+	.call .call_content{
+		width: 80%;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top:70px;
+		height: 75%;
+		display: flex;
+		flex-direction: column;
+		align-items: center
+	}
+	.call .call_content p{
+		color:#ffffff;
+		font-size: 0.8em;
+		letter-spacing: 5px;
+		text-align: center
+	}
+	.call .call_content .logo{
+		height: 50px;
+		/* margin-top: 20px;
+		margin-bottom: 10px; */
+		display: block;
+		margin:20px auto 10px auto
+	}
+	
+	.call .call_content>span{
+		color: #ffffff;
+		font-size: 1.5em;
+		border-bottom: 1px #ffffff solid;
+		text-align: center;
+		padding-bottom:10px;
+	}
+	.call .call_content span i{
+		font-style: normal;
+		font-size: 1.5em;
+	}
+	.call .call_content em{
+		font-style: normal;
+		display:inline-block;
+		color:#ffffff;
+		font-size: 0.9em;
+		margin-top:15px;
+		padding-bottom:10px;
+		border-bottom: 1px #ffffff solid;
+	}
+	.call .call_content em i{
+		font-style: normal;
+		font-size: 1.1em;
+	}
+	.call .call_content a{
+		display:inline-block;
+		width:80%;
+		color:#ffffff;
+		font-size: 0.5em;
+		line-height: 15px;
+		margin-bottom: 10px;
+		margin-top: 5px;
+		text-align: center
+	}
+	.call .call_content ul{
+		width: 100%;
+		height: 40px;
+		position: absolute;
+		bottom:0;
+		list-style: none;
+	}	
+	.call .call_content ul li{
+		width: 40%;
+		height: 100%;
+		position:relative;
+		background-color: #ffffff;
+		border-radius:5px;
+		color:#ffffff;
+	}
+	.call .call_content ul .left{
+		float: left;
+	}
+	.call .call_content ul .right{
+		float: right;
+	}
+	.call .call_content ul li span{
+		width: 95%;
+		height: 90%;
+		display: inline-block;
+		background: -webkit-linear-gradient(left, #ef6a8f,#cfc36b,#1cb1b3,#3e64ae);
+		position: absolute;
+		margin: auto;
+		right:2.5%;
+		bottom:2%;
+		border-radius:5px;
+		font-size: 1em;
+		line-height: 35px;
+	}
+
+
+	a{
+		text-decoration: none;
+		color:#333333;
+	}

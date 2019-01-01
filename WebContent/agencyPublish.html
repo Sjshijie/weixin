@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no" >  
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<link  type="text/css" rel="stylesheet" href="css/mycss.css"/>
+<link rel="stylesheet" href="css/layer.css">
+<link rel="stylesheet" href="css/mpicker.css">
+<link  type="text/css" rel="stylesheet" href="css/agencyPublish.css"/>
+<title>代办发布</title>
+</head>
+<body>
+	<div class="all">
+		<div class="all_top"></div>
+		<div class="all_content">
+			<ul>
+				<li>
+					<span>寻找</span>
+					<div class="selectwrap">
+						<select id='level'>
+							<option value="1">初级专家</option>
+							<option value="2">中级专家</option>
+							<option value="3">高级专家</option>
+						</select>
+					</div>
+				</li>
+				<li>
+					<span>办理</span>
+					<div class="selectwrap business" >
+						<div class="business-content">
+							请选择业务
+						</div>
+					</div>
+				</li>
+				<li>
+					
+						<span class="title">区域</span>
+						<div class="selectwrap">
+						<input type="text" id="area" class="select select_one select-value form-contorl" placeholder="黄浦区-不限">
+					</div>
+				</li>
+				<li>
+					<span>类型</span>
+					<div class="selectwrap">
+						<select id="comType">
+							<option>洋房</option>
+							<option>别墅</option>
+							<option>办公</option>
+							<option>商铺</option>
+							<option>住宅</option>
+							<option>使用权房</option>
+						</select>
+					</div>
+				</li>
+				<li class="title">
+					<hr>
+					<a>预约详情</a>
+				</li>
+				<li>
+					<span>时间</span>
+					<div class="selectwrap">
+					<input type="text" class="select select_one select-value2 form-contorl seeTime" placeholder="立即咨询">
+					</div>
+				</li>
+				<li class="adress">
+					<span>地址</span>
+					<div class="selectwrap quxian">
+						<select class="qu">
+								
+						</select>
+					</div>
+					<div class="selectwrap selectwrap1 ">
+						<select class="city">
+							<option>上海市</option>
+						</select>
+							
+					</div>
+				</li>
+				<li>
+					<div class="selectwrap selectwrap1">
+						<input type="text">
+					</div>
+				</li>
+				<li>
+					<div class="left btn">发布抢单</div>
+					<div class="right btn"><a href="expertList.html">指定专家</a></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+
+	<div class="call pay">
+		<img class="no" alt="" src="img/icon10.png">
+		<div class="call_content">
+			<p>买家卖家自己的租售平台</p>
+			<img class="logo" alt="" src="img/logo.png">
+
+			<span>支付<i class="big">50</i>π币</span>
+
+			<em>当前账户余额：<i class="pay_num"></i>&nbsp;π币</em>
+			<a>系统默认余额支付，如您余额不足请及时充值后再支付，感谢您的配合。</a>
+			<ul>
+				<li class="left">
+					<span style="text-align: center;" id="recharge">充值</span>
+				</li>
+				<li class="right">
+					<span style="text-align: center;" id="pay">付款</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="contain">
+		
+	</div>
+
+	<div class="layer"></div>
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/tokeUserId.js"></script>
+	<script src="js/json.js"></script>
+	<script src="js/mPicker.min.js"></script>
+	<script src="js/layer.js"></script>
+	<script src="js/agencyPublish.js"></script>
+
+</body>
+</html>

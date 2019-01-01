@@ -1,0 +1,109 @@
+	@media screen and (min-width: 1000px) {
+		.content .content_content{height: 120px; }
+	}
+	@media (min-width: 350px) and (max-width: 1000px) {
+		.content .content_content{height: calc(100vw / 3.75); }
+	}
+	@media (min-width: 300px) and (max-width: 350px) {
+		.content .content_content{height: calc(100vw / 3.75); }
+	}
+	.content .content_content{
+		width: 90%;
+		text-align: center;
+		position: relative;
+		border-bottom:1px #d3d1d1 solid;
+		display: inline-block;
+	}
+	.content .content_content ul{
+		width: 100%;
+		height: 70%;
+		display: inline-block;
+		list-style: none;
+		position: absolute;
+		margin: auto;top:0;
+		bottom:0;left:0;right:0;
+	}
+	.content .content_content ul li{
+		height: 100%;
+		float: left;
+	}
+	.content .content_content ul .left{
+		width: 20%;
+		float: left;
+		position: relative;
+	}
+	.content .content_content ul .left img{
+		width:60px;
+		height:60px;
+		border-radius:50%;
+		position: absolute;
+		margin: auto;
+		top:0;
+		left:0;
+		bottom:0
+		
+	}
+	.content .content_content ul .center{
+		width: 30%;
+		float: left;
+		margin-left:2%;
+		text-align: left;
+	}
+	.content .content_content ul .center p{
+		line-height: 20px;
+		display: inline-block;
+		color:#efb033;
+	}
+	.content .content_content ul .center span{
+		line-height: 20px;
+		display: inline-block;
+		font-size: 0.8em;
+		color:#929292;
+	}
+	.content .content_content ul .center div{
+		height: 25px;
+		line-height:25px;
+	}
+	.content .content_content ul .center div img{
+		max-height: 20px;
+		vertical-align: middle;
+	}
+	.content .content_content ul .center div span{
+		display: inline-block;
+		color:#ee839d;
+		margin-left: 5px;
+		font-size: 1em;
+		vertical-align: middle;
+	}
+	.content .content_content ul .right{
+		width: 45%;
+		float: right;
+		position: relative;
+	}
+	.content .content_content ul .right>span{
+		display: inline-block;
+		line-height: 20px;
+		position: absolute;
+		top:6px;
+		right:0;
+		color:#b7b7b7;
+		font-size: 0.8em;
+	}
+	.content .content_content ul .right>div{
+		hegiht:30px;
+		line-height:30px;
+		position: absolute;
+		margin:auto;
+		bottom:0;
+		right:0;
+	}
+	.content .content_content ul .right>div img{
+		max-height: 28px;
+		vertical-align: middle;
+	}
+	.content .content_content ul .right>div span{
+		display: inline-block;
+		height: 30px;
+		vertical-align: middle;
+		color:#efb033;
+	}

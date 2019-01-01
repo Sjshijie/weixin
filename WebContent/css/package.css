@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+   
+}
+.recharge{
+    width: 100%;
+    height: 4.8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    border-bottom:2px #d3d1d1 solid
+    
+}
+.contain{
+    width: 35%;
+    font-size: 0.5rem;
+    
+}
+.contain span{
+    font-size:1rem
+}
+
+.btn{
+    position: relative;
+    width: 20%;
+    text-align: center;
+    font-size: 0.5rem;
+    background: white;
+    padding:10px;
+    border:1px solid transparent;
+    border-radius:30px;
+    background-clip: padding-box;
+    color:#eb718f
+}
+
+.btn::after{
+    position: absolute;
+    top: -1px; bottom: -1px;
+    left: -1px; right: -1px;
+    background: -webkit-linear-gradient(left,#eb718f,#efb033 25%,#1cb1b1 50%,#3a64ae);
+    background: -moz-linear-gradient(left,#eb718f,#efb033 25%,#1cb1b1 50%,#3a64ae); 
+    background: linear-gradient(left,#eb718f,#efb033 25%,#1cb1b1 50%,#3a64ae);
+    content: '';
+    z-index: -1;
+    border-radius: 30px;
+    
+
+}
+
+
+
+
+

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="user-scalable=no" >  
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<title>房源列表</title>
+<link  type="text/css" rel="stylesheet" href="css/all.css"/>
+<link  type="text/css" rel="stylesheet" href="css/roomList.css"/>
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/roomList.js"></script>
+<script type="text/javascript" src="js/jquery.select1.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+
+</head>
+<body>
+	<!-- 区域 start -->
+	<div class="sel adress">
+		<ul class="adress_one">
+			<li class="left">
+				<ul>
+					<li class="cho">区域</li>
+					<li>地铁</li>
+					<li>商圈</li>
+				</ul>
+			</li>
+			<li class="center">
+				<ul>
+					<li>浦东</li>
+					<li>长宁</li>
+					<li  class="cho">黄埔</li>
+					<li>普陀</li>
+					<li>静安</li>
+					<li>徐汇</li>
+					<li>宝山</li>
+					<li>虹口</li>
+				</ul>
+			</li>
+			<li class="right">
+				<ul>
+					<li>人民广场</li>
+					<li>老西门</li>
+					<li>豫园</li>
+					<li>新世界</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- 区域 end -->
+	<!-- 租金 start -->
+	<div class="sel money">
+		<ul class="adress_one">
+			<li class="left">
+				<ul>
+					<li class="cho">租金</li>
+				</ul>
+			</li>
+			<li class="center">
+				<ul>
+					<li>不限</li>
+					<li>1000~2000元</li>
+					<li>2000~4000元</li>
+					<li class="cho">4000~6000元</li>
+					<li>6000~8000元</li>
+					<li>8000~12000元</li>
+					<li>12000元以上</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- 租金 end -->
+	<!-- 户型 start -->
+	<div class="sel roomType">
+		<ul class="adress_one">
+			<li class="left">
+				<ul>
+					<li class="cho">整租</li>
+					<li>合租</li>
+				</ul>
+			</li>
+			<li class="center">
+				<ul>
+					<li>不限</li>
+					<li class="cho">单间</li>
+					<li>套房</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- 户型 end -->
+	<!-- 更多 start -->
+	<div class="sel moreThan">
+		<ul class="adress_one">
+			<li class="left">
+				<ul>
+					<li class="cho">附近</li>
+					<li>装修</li>
+				</ul>
+			</li>
+			<li class="center">
+				<ul>
+					<li>不限</li>
+					<li class="cho">1KM</li>
+					<li>2KM</li>
+					<li>3KM</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- 更多 end -->
+	<div class="all">
+		<!-- 头部 start -->
+		<div class="top">
+			<!-- <div class="triangle_border_down"></div> -->
+			<ul>
+				<li><!-- <span>区域</span><span class="dow"><span></span></span> -->
+					<select class="select select_one adress_" name="state" data-value="0">
+			            <option value ="0">区域</option>
+			            <option value ="1">区域1</option>
+			            <option value ="2">区域2</option>
+			            <option value ="3">区域3</option>
+			        </select>
+				</li>
+				<li>
+					<select class="select select_one money_" name="state" data-value="0">
+			            <option value ="0">总价</option>
+			        </select>
+				</li>
+				<li>
+					<select class="select select_one roomType_" name="state" data-value="0">
+			            <option value ="0">户型</option>
+			        </select>
+				</li>
+				<li><!-- <span>更多</span><span class="dow dow_no"><span></span></span> -->
+					<select class="select select_one dow_no" name="state" data-value="0">
+			            <option value ="0">更多</option>
+			        </select>
+				</li>
+			</ul>
+		</div>
+		<!-- 头部 end -->
+		<!-- 内容 start -->
+		<div class="content">
+			<div class="content_content">
+				<!-- 内容 头部 start -->
+				<div class="content_content_top">
+					<div class="content_content_top_left">
+						<span class="span_left">小区</span>
+						<span class="span_right cho">公寓</span>
+					</div>
+					<div class="content_content_top_right"></div>
+				</div>
+				<!-- 内容 头部 end -->
+				<!-- one -->
+				<div class="content_content_bottom">
+					<div class="div_one">
+						<ul>
+							<li class="li_left"><img alt="" src="uploads/room.jpg"></li>
+							<li class="li_center">
+								<p class="title_p">静安寺小资美宅、美宅</p>
+								<p class="content_p"><span class="content_p_left">2室1厅 88m² 南</span><span class="content_p_right m_span">750万</span></p>
+								<p class="content_p"><span class="content_p_left">静安豪景苑</span><span class="content_p_right">76809万/平</span></p>
+							</li>
+						</ul>
+					</div>
+					<div class="div_two">
+						<ul>
+							<li class="left_li">
+								<p class="p_top">报名人数 <span>23</span></p>
+								<p class="p_bottom">12月19日00:00 结束</p>
+							</li>
+							<li class="right_li">
+								<ul>
+									<li>
+										<img alt="" src="images/icon1.png">
+										<span>精装<a>家具齐全</a></span>
+									</li>
+									<li>
+										<img alt="" src="images/icon1.png">
+										<span>11号线<a>近地铁</a></span>
+									</li>
+									<li>
+										<img alt="" src="images/icon1.png">
+										<span>万达广场<a>近商圈</a></span>
+									</li>
+								</ul>
+							</li>
+							<li class="center_li">
+								<img alt="" src="images/pj.png">
+							<li>
+						</ul>
+					</div>
+					<div class="div_three">
+						<ul>
+							<li class="left_li">
+								专家点评
+							</li>
+							<li class="right_li">
+								<div class="text">
+									<span>天下第一好房</span>
+								</div>
+								<div class="img">
+									<div class="img_img"></div>
+								</div>
+								<div class="name">王丹初级</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- two -->
+				<div class="content_content_bottom last">
+					<div class="div_one">
+						<ul>
+							<li class="li_left"><img alt="" src="uploads/room.jpg"></li>
+							<li class="li_center">
+								<p class="title_p">静安寺小资美宅、美宅</p>
+								<p class="content_p"><span class="content_p_left">2室1厅 88m² 南</span><span class="content_p_right m_span">750万</span></p>
+								<p class="content_p"><span class="content_p_left">静安豪景苑</span><span class="content_p_right">76809万/平</span></p>
+							</li>
+						</ul>
+					</div>
+					<div class="div_two">
+						<ul>
+							<li class="left_li">
+								<p class="p_top">报名人数 <span>23</span></p>
+								<p class="p_bottom">12月19日00:00 结束</p>
+							</li>
+							<li class="right_li">
+								<ul>
+									<li>
+										<img alt="" src="images/icon1.png">
+										<span>精装<a>家具齐全</a></span>
+									</li>
+									<li>
+										<img alt="" src="images/icon1.png">
+										<span>11号线<a>近地铁</a></span>
+									</li>
+									<li>
+										<img alt="" src="images/icon1.png">
+										<span>万达广场<a>近商圈</a></span>
+									</li>
+								</ul>
+							</li>
+							<li class="center_li">
+								<img alt="" src="images/pj.png">
+							<li>
+						</ul>
+					</div>
+					<div class="div_three">
+						<ul>
+							<li class="left_li">
+								专家点评
+							</li>
+							<li class="right_li">
+								<div class="text">
+									<span>天下第一好房</span>
+								</div>
+								<div class="img">
+									<div class="img_img"></div>
+								</div>
+								<div class="name">王丹初级</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<!-- 内容 end -->
+	</div>
+</body>
+</html>
